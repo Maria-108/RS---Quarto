@@ -50,7 +50,7 @@ Electromagnetic waves are three-dimensional in terms of the vertical movement of
 
 ### Atmospheric Scattering
 
-The energy emitted from the Sun is scattered into the atmosphere as particles. The smaller wavelengths scatter across the Earth's atmosphere, and are often captured by
+The energy emitted from the Sun is scattered into the atmosphere as particles. The smaller wavelengths scatter across the Earth's atmosphere, whilst longer wavelengths are reflected.
 
 ![](images/0CC0CB81-CC06-4F5B-B6AD-E3548022CBDC.png){fig-align="center"}
 
