@@ -3,11 +3,18 @@ project:
 
 book:
   title: "RS - Quarto"
-  author: "Norah Jones"
+  author: "Maria Bazic"
   date: "1/22/2024"
   chapters:
     - index.qmd
-    - intro.qmd
+    - week_1.qmd
+    - week_2.qmd
+    - week_3.qmd
+    - week_4.qmd
+    - week_5.qmd
+    - week_6.qmd
+    - week_7.qmd
+    - week_8.qmd
     - summary.qmd
     - references.qmd
 

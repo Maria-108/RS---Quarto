@@ -1,0 +1,8 @@
+# Week 2 - Satellite Presentation of CALIPSO via Xaringen
+
+```{r echo = FALSE, out.width='40%'}
+
+xaringanExtra::embed_xaringan(url = "https://maria-108.github.io/RS-Xaringan/#1",
+                              ratio = "16:9")
+
+```
