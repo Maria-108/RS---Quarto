@@ -56,17 +56,17 @@ The energy emitted from the Sun is scattered into the atmosphere as particles. T
 
 ### Resolutions
 
-There are four types of resolutions that need to be considered in remote sensing. One of the more obvious ones relate to **spatial** resolution which determines the size of each pixel in an image. In this way, you are selecting the geographic scale of the satellite image where lower range of meters implies a high-resolution image, as it is recorded from the closest capturing point (zoom level) to Earth observation, whilst the higher kilometer range indicated a lower-resolution image.
+There are four types of resolutions that need to be considered in remote sensing. One of the more obvious ones relate to [**spatial**]{style="color: #FE9600"} resolution which determines the size of each pixel in an image. In this way, you are selecting the geographic scale of the satellite image where lower range of meters implies a high-resolution image, as it is recorded from the closest capturing point (zoom level) to Earth observation, whilst the higher kilometer range indicated a lower-resolution image.
 
 ![](https://www.earthdata.nasa.gov/s3fs-public/styles/large_full_968px_/public/2023-04/Spatial-Resolution-Basics.jpeg?VersionId=a5wlR6AMhdFPzRmNTWGApkF4taCVPrV0&itok=XpghkRyC){fig-align="center"}
 
 The other three definitions have been provided by NASA Earthdata (2024)
 
-**Spectral** - "the ability of a sensor to discern finer wavelengths". This implies the resolution should have more or narrower bands.
+[**Spectral**]{style="color: #FE9600"} - "the ability of a sensor to discern finer wavelengths". This implies the resolution should have more or narrower bands.
 
-**Temporal** - "the time it take for a satellite to complete an orbit and revisit the same observation data".
+[**Temporal**]{style="color: #FE9600"} - "the time it take for a satellite to complete an orbit and revisit the same observation data".
 
-**Radiometric** - "the amount of information in each pixel...the no. of bits representing the energy recorded".
+[**Radiometric**]{style="color: #FE9600"} - "the amount of information in each pixel...the no. of bits representing the energy recorded".
 
 ## Applications
 
