@@ -248,16 +248,36 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="topographic-correction" class="level3" data-number="3.1.3">
 <h3 data-number="3.1.3" class="anchored" data-anchor-id="topographic-correction"><span class="header-section-number">3.1.3</span> Topographic correction</h3>
-<p>This type of correction is also know as <span style="color: #2ACAEA"><strong>Orthorectification Correction</strong></span> which is a subset of georectification. It is the process where distortions are removed through setting the viewpoint to the nadir, and in addition to that it provides coordinates to the image. This error occurs as <em>“The topographical variations in the surface of the earth and the tilt of the satellite or aerial sensor can affect the distance with which features on the satellite or aerial image are displayed.”</em> (Satellite Imaging Corporation (2022). The image below shows the layers applied when performing this correcton, which inidicates the requirement of an elevation model. Additionally this solution requires the cosine correction</p>
+<p>This type of correction is also know as <span style="color: #2ACAEA"><strong>Orthorectification Correction</strong></span> which is a subset of georectification. It is the process where distortions are removed through setting the viewpoint to the nadir, and in addition to that it provides coordinates to the image. This error occurs as <em>“The topographical variations in the surface of the earth and the tilt of the satellite or aerial sensor can affect the distance with which features on the satellite or aerial image are displayed.”</em> (Satellite Imaging Corporation (2022). The image below shows the layers applied when performing this correcton, which inidicates the requirement of an elevation model.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://www.intermap.com/hs-fs/hubfs/Ortho4image1.png?width=889&amp;name=Ortho4image1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 <p><sub>Image&nbsp;source:&nbsp;Intermap&nbsp;(2019)</sub></p>
+<p>Additionally this solution requires the cosine correction model:</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="images/DB118D8B-A5DC-440D-9008-9A0BB212E92C_4_5005_c.jpeg" class="img-fluid figure-img" width="167"></p>
+</figure>
+</div>
+<ul>
+<li><p>L<sub>H</sub> is the “corrected radiance observed from the horizontal surface” - from DN to TOA (digital number to top of atmosphere)</p></li>
+<li><p>L<sub>T</sub> is the “radiance before correction observed from the inclined face”</p></li>
+<li><p><em>i</em> is the “solar incidence angle” - the cosine of the angle between the normal line of the slope and the solar zenith</p></li>
+<li><p>θo (theta) is the “solar zenith angle”</p></li>
+</ul>
 </section>
 <section id="radiometric-calibration" class="level3" data-number="3.1.4">
 <h3 data-number="3.1.4" class="anchored" data-anchor-id="radiometric-calibration"><span class="header-section-number">3.1.4</span> Radiometric calibration</h3>
+<p>This is where “sensors capture image brightness as digital number” through recording the <em>“intensity of the electromagnetic radiation</em>” (Humboldt State University 2020) and can be measured in the following ways:</p>
+<ul>
+<li><p>in watts (power or light)</p></li>
+<li><p>per square meter (surface within FOV)</p></li>
+<li><p>per steradian (angle of view)</p></li>
+<li><p>per nanometer (wavelength)</p></li>
+</ul>
+<p><sub>List&nbsp;taken&nbsp;from&nbsp;Lecture&nbsp;3,&nbsp;slide&nbsp;48</sub></p>
 </section>
 <section id="definitions" class="level3" data-number="3.1.5">
 <h3 data-number="3.1.5" class="anchored" data-anchor-id="definitions"><span class="header-section-number">3.1.5</span> Definitions</h3>
@@ -269,22 +289,34 @@ ul.task-list li input[type="checkbox"] {
 <p><span style="color: #FF9CB6"><strong>Slope</strong></span> - attenuated atmospheric correction which involved the “dimming and blurring from scattering of light”. This is the electromagnetic wave absorption and scattering by the atmosphere.</p>
 <p><span style="color: #FF9CB6"><strong>Solar azimuth</strong></span> - compass angle of the Sun (N=0˚) 90˚E at sunrise and 270˚W at sunset</p>
 <p><span style="color: #FF9CB6"><strong>Solar zenith</strong></span> - angle of local zenith (above the point on ground) and Sun from vertical (90˚ elevation)</p>
+<p><span style="color: #FF9CB6"><strong>Spectral radiance</strong></span> - “the amount of light within a band from a sensor in the field ov view (FOV)”</p>
 <p><span style="color: #FF9CB6"><strong>View angle</strong></span> - this means that the image angle doesn’t align with the Nadir.</p>
 </section>
 </section>
 <section id="applications" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">3.2</span> Applications</h2>
+<p>Ilori et al.&nbsp;(2019) conducted a study where they set out to investigate atmospheric correction techniques particularly for coastal remote sensing cases. They aimed to extract the ocean colour which <em>“provides information on in-water optical properties”</em> (pg 1), however this is difficult to extract as only “~10% of the total signal reaches the TOA” (pg 2). The main method that was applied to this study was atmospheric correction, but the researchers recognised that <em>“residual errors can introduce large uncertainties in R<sub>rs</sub> estimates, resulting in erroneous retrieval of OC products such as apparent optical properties”</em> (pg 2). They found that the application of atmospheric correction was unreliable for “<em>443 and 482 nm channels”</em> but where able to perform well at”<em>only a few sites located in nearshore and inland waters”</em> (pg 12).</p>
+<p>Ma et al.&nbsp;(2020) conducted a study to analyse uncertainty for topographic correction. They applied the cosine correction and the digital elevation model (DEM) in their methods and found that the uncertainty of the solar incidence angle was related to the rugged terrain, and its radiance substantially increased after this correction was applied. Despite these methods being different from each other,</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/8FA15F78-EE8D-4182-A216-8A6083B8B320_1_201_a.jpeg" class="img-fluid figure-img" width="458"></p>
+</figure>
+</div>
+<p><sub>Image&nbsp;source:&nbsp;Ma&nbsp;et&nbsp;al.&nbsp;(2020)</sub></p>
 </section>
 <section id="reflection" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">3.3</span> Reflection</h2>
-<p>This weeks’ topic was relatively interesting for me to learn about. I was not aware that there would be such a variety of errors and correction types that can be applied to satellite imagery.</p>
+<p>This weeks topic was relatively interesting for me to learn about. I was not aware that there would be such a variety of errors and correction types that can be applied to satellite imagery.</p>
 </section>
 <section id="references" class="level2" data-number="3.4">
 <h2 data-number="3.4" class="anchored" data-anchor-id="references"><span class="header-section-number">3.4</span> References</h2>
 <p>AWK Wiki (2024) <a href="http://wiki.awf.forst.uni-goettingen.de/wiki/index.php/Geometric_corrections" class="uri">http://wiki.awf.forst.uni-goettingen.de/wiki/index.php/Geometric_corrections</a></p>
 <p>Celestis (2024) <a href="https://www.celestis.com/resources/faq/what-are-the-azimuth-and-elevation-of-a-satellite/#:~:text=Azimuth%20and%20Elevation%20are%20measures,0°%20to%20360°." class="uri">https://www.celestis.com/resources/faq/what-are-the-azimuth-and-elevation-of-a-satellite/#:~:text=Azimuth%20and%20Elevation%20are%20measures,0°%20to%20360°.</a></p>
 <p>GIS Geography (2023) <a href="https://gisgeography.com/atmospheric-correction/" class="uri">https://gisgeography.com/atmospheric-correction/</a></p>
+<p>Humboldt State University (2020) <a href="http://gsp.humboldt.edu/olm/Courses/GSP_216/online/lesson7/radiometric.html" class="uri">http://gsp.humboldt.edu/olm/Courses/GSP_216/online/lesson7/radiometric.html</a></p>
+<p>Ilori, C. O. et al.&nbsp;(2019) Analysing Performances of Different Atmospheric Correction Techniques for Landsat 8: Application for Coastal Remote Sensing. <em>Remote Sensing.</em> 11(4), pg 1-20. [Online] Available via: <a href="https://www.mdpi.com/2072-4292/11/4/469" class="uri">https://www.mdpi.com/2072-4292/11/4/469</a></p>
 <p>Intermap (2019) <a href="https://www.intermap.com/blog/orthorectification-in-a-nutshell" class="uri">https://www.intermap.com/blog/orthorectification-in-a-nutshell</a></p>
+<p>Ma, Z. et al.&nbsp;(2020) Uncertainty Analysis for Topographic Correction for Hyperspectral Remote Sensing Images. <em>Remote Sensing.</em> 12(4), pg 1-24. [Online] Available via: <a href="https://www.mdpi.com/2072-4292/12/4/705" class="uri">https://www.mdpi.com/2072-4292/12/4/705</a></p>
 <p>Mapbox (2013) <a href="https://blog.mapbox.com/before-and-after-atmospheric-correction-97f55cb2b5d1" class="uri">https://blog.mapbox.com/before-and-after-atmospheric-correction-97f55cb2b5d1</a></p>
 <p>Satellite Imaging Corporation (2022) <a href="https://www.satimagingcorp.com/services/orthorectification/#:~:text=The%20image%20data%20must%20be,angles%2C%20positions%2C%20and%20areas." class="uri">https://www.satimagingcorp.com/services/orthorectification/#:~:text=The%20image%20data%20must%20be,angles%2C%20positions%2C%20and%20areas.</a></p>
 
