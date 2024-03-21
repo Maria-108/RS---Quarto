@@ -1,7 +1,35 @@
-# Summary
+# Appendix
 
-In summary, this book has no content whatsoever.
+This section is designed to provide definitions of all terms, abbreviations and necessary equations encountered in this Remote Sensing Module (CASA0023). All of the sections have been intentionally arranged in alphabetical order for easy navigation.
 
-```{r}
-1 + 1
-```
+## Dictionary
+
+[**Azimuth angle**]{style="color: #FF9CB6"} - "the compass direction from which the sunlight is coming" that informs you which direction to face and can vary from 0˚ to 360˚
+
+[**Georectification**]{style="color: #FF9CB6"} - giving coordinates to an image
+
+[**Nadir**]{style="color: #FF9CB6"} - view of directly looking down on an area
+
+[**Orthorectification**]{style="color: #FF9CB6"} - removing distortions by making the pixels viewpoint at the nadir
+
+[**Scattering**]{style="color: #FF9CB6"} - can create the "adjacency effect", radiance from pixels nearby mixed into pixel of interest
+
+[**Solar azimuth**]{style="color: #FF9CB6"} - compass angle of the Sun (N=0˚) 90˚E at sunrise and 270˚W at sunset
+
+[**Solar zenith**]{style="color: #FF9CB6"} - angle of local zenith (above the point on ground) and Sun from vertical (90˚ elevation)
+
+## Abbreviations
+
+[**EMR**]{style="color: #1CB9F2"} - Electromagnetic Radiation
+
+[**GCP**]{style="color: #1CB9F2"} - Ground Control Points
+
+[**LiDAR**]{style="color: #1CB9F2"} - Light Detection and Ranging
+
+[**LST**]{style="color: #1CB9F2"} - Land Surface Temperature
+
+[**NDVI**]{style="color: #1CB9F2"} - Normalised Difference Vegetation Index
+
+[**SAR**]{style="color: #1CB9F2"} - Synthetic Apeture Radar
+
+## Equations

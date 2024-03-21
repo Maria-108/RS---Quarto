@@ -4,6 +4,12 @@
 
 This week we were introduce to Google Earth Engine (GEE) which is a tool used as a geospatial processing service. The programming language for GEE is typically JavaScript, but there a Python API is available too, both of which can be used to create queryable applications.
 
+Important Terms
+
+-   ImageCollection = image stack
+
+-   FeatureCollection = feature stack (lots of polygons)
+
 ![](https://developers.google.com/static/earth-engine/images/Pyramids.png){fig-align="center"}
 
 ~Image source: Google\ Earth\ Engine (2024)~
