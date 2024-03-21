@@ -155,14 +155,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Additional Features</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
+ <span class="menu-text">Appendix</span></a>
   </div>
 </li>
     </ul>
@@ -175,7 +169,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">3.1</span> Summary</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">3.1</span> Summary</a>
+  <ul class="collapse">
+  <li><a href="#geometric-correction" id="toc-geometric-correction" class="nav-link" data-scroll-target="#geometric-correction"><span class="header-section-number">3.1.1</span> Geometric correction</a></li>
+  <li><a href="#atmospheric-correction" id="toc-atmospheric-correction" class="nav-link" data-scroll-target="#atmospheric-correction"><span class="header-section-number">3.1.2</span> Atmospheric correction</a></li>
+  <li><a href="#topographic-correction" id="toc-topographic-correction" class="nav-link" data-scroll-target="#topographic-correction"><span class="header-section-number">3.1.3</span> Topographic correction</a></li>
+  <li><a href="#radiometric-calibration" id="toc-radiometric-calibration" class="nav-link" data-scroll-target="#radiometric-calibration"><span class="header-section-number">3.1.4</span> Radiometric calibration</a></li>
+  <li><a href="#definitions" id="toc-definitions" class="nav-link" data-scroll-target="#definitions"><span class="header-section-number">3.1.5</span> Definitions</a></li>
+  </ul></li>
   <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">3.2</span> Applications</a></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">3.3</span> Reflection</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">3.4</span> References</a></li>
@@ -205,28 +206,70 @@ ul.task-list li input[type="checkbox"] {
 <section id="summary" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">3.1</span> Summary</h2>
 <p>This week focuses on corrections in remote sensing, often referring to the process which is applied to the raw satellite image. There are three types of corrections that can be used in remote sensing, and each poses a different solution to the type of image distortion encountered.</p>
-<section id="geometric-correction" class="level4" data-number="3.1.0.1">
-<h4 data-number="3.1.0.1" class="anchored" data-anchor-id="geometric-correction"><span class="header-section-number">3.1.0.1</span> Geometric correction</h4>
-<p>For this type of correction, there are four potential image distortions that can be encountered: view angle, topography, wind and rotation of the Earth.</p>
-<ul>
-<li><p><strong>View angle</strong> - this means that the image angle doesn’t align with the Nadir. (Nadir = view of directly looking down on an area)</p></li>
-<li><p>Topography -</p></li>
-<li><p>Wind -</p></li>
-<li><p>Rotation of the earth -</p></li>
-</ul>
-<p>Additionally ground control points (GCPs) need to be identified in order to match points to the satellite image. The image below illustrates how this process works.</p>
+<section id="geometric-correction" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="geometric-correction"><span class="header-section-number">3.1.1</span> Geometric correction</h3>
+<p>There are different types of errors that can occur when satellite data is being collected. In the case of this error, image distortions are at the forefront. For this type of correction, there are four potential image distortions that can be encountered: view angle, topography, wind and rotation of the Earth.</p>
+<p>In order for this process to work, ground control points (GCPs) need to be identified in order to match points to the satellite image. Here the coordinates are modelled to produce geometric transformation coefficients. This is then plotted and we set the value to 0.5 in order to minimise the root-mean-square-deviation (RMSE).</p>
+<p>There is another solution that can be applied for geometric correction. This involves the following calculation: <strong>(observed - predicted ((the residual))^2</strong>. Here the results will be summed up and divided by the no. of data points, and additionally, you calculate the square root of that result.</p>
+<p>The image below illustrates how this process works.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="http://wiki.awf.forst.uni-goettingen.de/wiki/images/thumb/b/b7/Geometric_correction.png/600px-Geometric_correction.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 <p><sub>Image&nbsp;source:&nbsp;AWF&nbsp;Wiki&nbsp;(2024)</sub></p>
+<p>This indicates that the image may be re-sampled as a result. The following list provides ways in which re-sampling can be applied:</p>
+<ul>
+<li><p>Linear</p></li>
+<li><p>Cubic</p></li>
+<li><p>Cubic Spline</p></li>
+<li><p>Nearest Neighbour</p></li>
+</ul>
 </section>
-<section id="atmospheric-correction" class="level4" data-number="3.1.0.2">
-<h4 data-number="3.1.0.2" class="anchored" data-anchor-id="atmospheric-correction"><span class="header-section-number">3.1.0.2</span> Atmospheric correction</h4>
+<section id="atmospheric-correction" class="level3" data-number="3.1.2">
+<h3 data-number="3.1.2" class="anchored" data-anchor-id="atmospheric-correction"><span class="header-section-number">3.1.2</span> Atmospheric correction</h3>
+<p>According to GIS Geography (2023), atmospheric correction is the process which <em>“removes the scattering and absorption effects from the atmosphere”.</em> There are three types of atmospheric correction that can be applied:</p>
+<ul>
+<li><p><span style="color: #60BEDB"><strong>Relative</strong></span> (to something) correction aims to normalise the intensities of bands within a single image and from multiple dates to one. This can be achieved through the following processes:</p>
+<ul>
+<li><p><span style="color: #BBA8FF"><strong>Dark Object Subtraction (DOS)</strong></span> that searches for the darkest value in each band and subtracts it from each pixel.</p></li>
+<li><p><span style="color: #BBA8FF"><strong>Pseudo-Invariant Features (PIFs)</strong></span> that “assumes brightness pixels” of a base image and adjusts it according to the regression result.</p></li>
+</ul></li>
+<li><p><span style="color: #60BEDB"><strong>Absolute</strong></span> (definitive) correction aims to change the brightness values into “scaled surface reflectance”, which is later compared to the surface reflectance. However, some datasets may require image altitude and atmospheric visibility data in order for this correction to be properly applied.</p></li>
+<li><p><span style="color: #60BEDB"><strong>Empirical Line Correction</strong></span> which uses the measurements that derived form the linear regression against the satellite data. This involves the following calculation: <strong>Reflectance (fieldspectrum) = gain * radiance(input data) + offset</strong></p></li>
+</ul>
+<p>The image below shows the difference between satellite images before (left image - which shows <em>“top of atmosphere reflectance”</em>) and after (right image - which shows <em>“surface reflectance”</em>) atmospheric correction is applied. Often, <em>“absorption and scattering creates haze in an image, which reduces the contrast of the image”</em> (Lecture 3, slide 27) and this can be seen across the two images below.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://miro.medium.com/v2/resize:fit:928/0*2ifBrZXebW_EaQca.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p><sub>Image&nbsp;source:&nbsp;Mapbox&nbsp;(2013)</sub></p>
 </section>
-<section id="topographic-correction" class="level4" data-number="3.1.0.3">
-<h4 data-number="3.1.0.3" class="anchored" data-anchor-id="topographic-correction"><span class="header-section-number">3.1.0.3</span> Topographic correction</h4>
+<section id="topographic-correction" class="level3" data-number="3.1.3">
+<h3 data-number="3.1.3" class="anchored" data-anchor-id="topographic-correction"><span class="header-section-number">3.1.3</span> Topographic correction</h3>
+<p>This type of correction is also know as <span style="color: #2ACAEA"><strong>Orthorectification Correction</strong></span> which is a subset of georectification. It is the process where distortions are removed through setting the viewpoint to the nadir, and in addition to that it provides coordinates to the image. This error occurs as <em>“The topographical variations in the surface of the earth and the tilt of the satellite or aerial sensor can affect the distance with which features on the satellite or aerial image are displayed.”</em> (Satellite Imaging Corporation (2022). The image below shows the layers applied when performing this correcton, which inidicates the requirement of an elevation model. Additionally this solution requires the cosine correction</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.intermap.com/hs-fs/hubfs/Ortho4image1.png?width=889&amp;name=Ortho4image1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p><sub>Image&nbsp;source:&nbsp;Intermap&nbsp;(2019)</sub></p>
+</section>
+<section id="radiometric-calibration" class="level3" data-number="3.1.4">
+<h3 data-number="3.1.4" class="anchored" data-anchor-id="radiometric-calibration"><span class="header-section-number">3.1.4</span> Radiometric calibration</h3>
+</section>
+<section id="definitions" class="level3" data-number="3.1.5">
+<h3 data-number="3.1.5" class="anchored" data-anchor-id="definitions"><span class="header-section-number">3.1.5</span> Definitions</h3>
+<p><span style="color: #FF9CB6"><strong>Azimuth angle</strong></span> - “the compass direction from which the sunlight is coming” that informs you which direction to face and can vary from 0˚ to 360˚</p>
+<p><span style="color: #FF9CB6"><strong>Georectification</strong></span> - giving coordinates to an image</p>
+<p><span style="color: #FF9CB6"><strong>Nadir</strong></span> - view of directly looking down on an area</p>
+<p><span style="color: #FF9CB6"><strong>Orthorectification</strong></span> - removing distortions by making the pixels viewpoint at the nadir</p>
+<p><span style="color: #FF9CB6"><strong>Scattering</strong></span> - can create the “adjacency effect”, radiance from pixels nearby mixed into pixel of interest</p>
+<p><span style="color: #FF9CB6"><strong>Slope</strong></span> - attenuated atmospheric correction which involved the “dimming and blurring from scattering of light”. This is the electromagnetic wave absorption and scattering by the atmosphere.</p>
+<p><span style="color: #FF9CB6"><strong>Solar azimuth</strong></span> - compass angle of the Sun (N=0˚) 90˚E at sunrise and 270˚W at sunset</p>
+<p><span style="color: #FF9CB6"><strong>Solar zenith</strong></span> - angle of local zenith (above the point on ground) and Sun from vertical (90˚ elevation)</p>
+<p><span style="color: #FF9CB6"><strong>View angle</strong></span> - this means that the image angle doesn’t align with the Nadir.</p>
 </section>
 </section>
 <section id="applications" class="level2" data-number="3.2">
@@ -234,10 +277,16 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="reflection" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">3.3</span> Reflection</h2>
+<p>This weeks’ topic was relatively interesting for me to learn about. I was not aware that there would be such a variety of errors and correction types that can be applied to satellite imagery.</p>
 </section>
 <section id="references" class="level2" data-number="3.4">
 <h2 data-number="3.4" class="anchored" data-anchor-id="references"><span class="header-section-number">3.4</span> References</h2>
 <p>AWK Wiki (2024) <a href="http://wiki.awf.forst.uni-goettingen.de/wiki/index.php/Geometric_corrections" class="uri">http://wiki.awf.forst.uni-goettingen.de/wiki/index.php/Geometric_corrections</a></p>
+<p>Celestis (2024) <a href="https://www.celestis.com/resources/faq/what-are-the-azimuth-and-elevation-of-a-satellite/#:~:text=Azimuth%20and%20Elevation%20are%20measures,0°%20to%20360°." class="uri">https://www.celestis.com/resources/faq/what-are-the-azimuth-and-elevation-of-a-satellite/#:~:text=Azimuth%20and%20Elevation%20are%20measures,0°%20to%20360°.</a></p>
+<p>GIS Geography (2023) <a href="https://gisgeography.com/atmospheric-correction/" class="uri">https://gisgeography.com/atmospheric-correction/</a></p>
+<p>Intermap (2019) <a href="https://www.intermap.com/blog/orthorectification-in-a-nutshell" class="uri">https://www.intermap.com/blog/orthorectification-in-a-nutshell</a></p>
+<p>Mapbox (2013) <a href="https://blog.mapbox.com/before-and-after-atmospheric-correction-97f55cb2b5d1" class="uri">https://blog.mapbox.com/before-and-after-atmospheric-correction-97f55cb2b5d1</a></p>
+<p>Satellite Imaging Corporation (2022) <a href="https://www.satimagingcorp.com/services/orthorectification/#:~:text=The%20image%20data%20must%20be,angles%2C%20positions%2C%20and%20areas." class="uri">https://www.satimagingcorp.com/services/orthorectification/#:~:text=The%20image%20data%20must%20be,angles%2C%20positions%2C%20and%20areas.</a></p>
 
 
 </section>

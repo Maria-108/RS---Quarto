@@ -1,0 +1,99 @@
+# Week 3 - Corrections
+
+## Summary
+
+This week focuses on corrections in remote sensing, often referring to the process which is applied to the raw satellite image. There are three types of corrections that can be used in remote sensing, and each poses a different solution to the type of image distortion encountered.
+
+### Geometric correction
+
+There are different types of errors that can occur when satellite data is being collected. In the case of this error, image distortions are at the forefront. For this type of correction, there are four potential image distortions that can be encountered: view angle, topography, wind and rotation of the Earth.
+
+In order for this process to work, ground control points (GCPs) need to be identified in order to match points to the satellite image. Here the coordinates are modelled to produce geometric transformation coefficients. This is then plotted and we set the value to 0.5 in order to minimise the root-mean-square-deviation (RMSE).
+
+There is another solution that can be applied for geometric correction. This involves the following calculation: **(observed - predicted ((the residual))\^2**. Here the results will be summed up and divided by the no. of data points, and additionally, you calculate the square root of that result.
+
+The image below illustrates how this process works.
+
+![](http://wiki.awf.forst.uni-goettingen.de/wiki/images/thumb/b/b7/Geometric_correction.png/600px-Geometric_correction.png){fig-align="center"}
+
+~Image source: AWF Wiki (2024)~
+
+This indicates that the image may be re-sampled as a result. The following list provides ways in which re-sampling can be applied:
+
+-   Linear
+
+-   Cubic
+
+-   Cubic Spline
+
+-   Nearest Neighbour
+
+### Atmospheric correction
+
+According to GIS Geography (2023), atmospheric correction is the process which *"removes the scattering and absorption effects from the atmosphere".* There are three types of atmospheric correction that can be applied:
+
+-   [**Relative**]{style="color: #60BEDB"} (to something) correction aims to normalise the intensities of bands within a single image and from multiple dates to one. This can be achieved through the following processes:
+
+    -   [**Dark Object Subtraction (DOS)**]{style="color: #BBA8FF"} that searches for the darkest value in each band and subtracts it from each pixel.
+
+    -   [**Pseudo-Invariant Features (PIFs)**]{style="color: #BBA8FF"} that "assumes brightness pixels" of a base image and adjusts it according to the regression result.
+
+-   [**Absolute**]{style="color: #60BEDB"} (definitive) correction aims to change the brightness values into "scaled surface reflectance", which is later compared to the surface reflectance. However, some datasets may require image altitude and atmospheric visibility data in order for this correction to be properly applied.
+
+-   [**Empirical Line Correction**]{style="color: #60BEDB"} which uses the measurements that derived form the linear regression against the satellite data. This involves the following calculation: **Reflectance (fieldspectrum) = gain \* radiance(input data) + offset**
+
+The image below shows the difference between satellite images before (left image - which shows *"top of atmosphere reflectance"*) and after (right image - which shows *"surface reflectance"*) atmospheric correction is applied. Often, *"absorption and scattering creates haze in an image, which reduces the contrast of the image"* (Lecture 3, slide 27) and this can be seen across the two images below.
+
+![](https://miro.medium.com/v2/resize:fit:928/0*2ifBrZXebW_EaQca.png){fig-align="center"}
+
+~Image source: Mapbox (2013)~
+
+### Topographic correction
+
+This type of correction is also know as [**Orthorectification Correction**]{style="color: #2ACAEA"} which is a subset of georectification. It is the process where distortions are removed through setting the viewpoint to the nadir, and in addition to that it provides coordinates to the image. This error occurs as *"The topographical variations in the surface of the earth and the tilt of the satellite or aerial sensor can affect the distance with which features on the satellite or aerial image are displayed."* (Satellite Imaging Corporation (2022). The image below shows the layers applied when performing this correcton, which inidicates the requirement of an elevation model. Additionally this solution requires the cosine correction
+
+![](https://www.intermap.com/hs-fs/hubfs/Ortho4image1.png?width=889&name=Ortho4image1.png){fig-align="center"}
+
+~Image source: Intermap (2019)~
+
+### Radiometric calibration
+
+### Definitions
+
+[**Azimuth angle**]{style="color: #FF9CB6"} - "the compass direction from which the sunlight is coming" that informs you which direction to face and can vary from 0˚ to 360˚
+
+[**Georectification**]{style="color: #FF9CB6"} - giving coordinates to an image
+
+[**Nadir**]{style="color: #FF9CB6"} - view of directly looking down on an area
+
+[**Orthorectification**]{style="color: #FF9CB6"} - removing distortions by making the pixels viewpoint at the nadir
+
+[**Scattering**]{style="color: #FF9CB6"} - can create the "adjacency effect", radiance from pixels nearby mixed into pixel of interest
+
+[**Slope**]{style="color: #FF9CB6"} - attenuated atmospheric correction which involved the "dimming and blurring from scattering of light". This is the electromagnetic wave absorption and scattering by the atmosphere.
+
+[**Solar azimuth**]{style="color: #FF9CB6"} - compass angle of the Sun (N=0˚) 90˚E at sunrise and 270˚W at sunset
+
+[**Solar zenith**]{style="color: #FF9CB6"} - angle of local zenith (above the point on ground) and Sun from vertical (90˚ elevation)
+
+[**View angle**]{style="color: #FF9CB6"} - this means that the image angle doesn't align with the Nadir.
+
+## Applications
+
+## Reflection
+
+This weeks' topic was relatively interesting for me to learn about. I was not aware that there would be such a variety of errors and correction types that can be applied to satellite imagery.
+
+## References
+
+AWK Wiki (2024) <http://wiki.awf.forst.uni-goettingen.de/wiki/index.php/Geometric_corrections>
+
+Celestis (2024) <https://www.celestis.com/resources/faq/what-are-the-azimuth-and-elevation-of-a-satellite/#:~:text=Azimuth%20and%20Elevation%20are%20measures,0°%20to%20360°.>
+
+GIS Geography (2023) <https://gisgeography.com/atmospheric-correction/>
+
+Intermap (2019) <https://www.intermap.com/blog/orthorectification-in-a-nutshell>
+
+Mapbox (2013) <https://blog.mapbox.com/before-and-after-atmospheric-correction-97f55cb2b5d1>
+
+Satellite Imaging Corporation (2022) <https://www.satimagingcorp.com/services/orthorectification/#:~:text=The%20image%20data%20must%20be,angles%2C%20positions%2C%20and%20areas.>

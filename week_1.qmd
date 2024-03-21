@@ -50,7 +50,7 @@ Electromagnetic waves are three-dimensional in terms of the vertical movement of
 
 ### Atmospheric Scattering
 
-The energy emitted from the Sun is scattered into the atmosphere as particles. The smaller wavelengths scatter across the Earth's atmosphere, whilst longer wavelengths are reflected.
+The energy emitted from the Sun is scattered into the atmosphere as particles. The smaller wavelengths scatter across the Earth's atmosphere, whilst longer wavelengths are absorbed and reflected back.
 
 ![](images/0CC0CB81-CC06-4F5B-B6AD-E3548022CBDC.png){fig-align="center"}
 
@@ -86,7 +86,9 @@ Zhao et al. (2019) reviewed nighttime light observation, which is enabled throug
 
 ## Reflection
 
-There were a lot of interesting concepts introduced this week. I particularly enjoyed learning about the different types of sensors that operate on satellites, and the difference in types of resolution available to view and how this can alter the perspective of the area observed. I wasn't aware of the amount of components that are require for remote sensing, despite the assumption of the complexity of satellites.
+There were a lot of interesting concepts introduced this week. I particularly enjoyed learning about the different types of sensors that operate on satellites, and the difference in types of resolution available to view and how this can alter the perspective of the area observed. I wasn't aware of the amount of components that are require for remote sensing, despite the assumption of the complexity of satellites. I was particularly interested in discovering the applications of active sensors, as they can detect during the night and through clouds, which opens up a lot of research opportunities. I was interested in learning the different types of resolutions that are taken into account when processing satellite images.
+
+Based on the concepts introduced above, this made me realise that remote sensing can be a useful tool in spatial analysis as there are many features that can be used and adjusted such as the resolution type and scale that alter the way in which certain areas and geographical characteristics can be analysed. I don't know yet whether I will be implementing remote sensing in my work in the future, but if in any case I do, I'm sure it would add an insightful perspective to my analysis which is equally visually stimulating.
 
 ## References
 
