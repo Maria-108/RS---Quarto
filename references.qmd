@@ -4,9 +4,13 @@ This section is designed to provide definitions of all terms, abbreviations and 
 
 ## Abbreviations
 
+[**DN**]{style="color: #1CB9F2"} - Digital Number
+
 [**DOS**]{style="color: #1CB9F2"} - Dark Object Subtraction
 
 [**EMR**]{style="color: #1CB9F2"} - Electromagnetic Radiation
+
+[**FOV**]{style="color: #1CB9F2"} - Field of View
 
 [**GCP**]{style="color: #1CB9F2"} - Ground Control Points
 

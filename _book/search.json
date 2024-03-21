@@ -1,0 +1,121 @@
+[
+  {
+    "objectID": "week_3.html#summary",
+    "href": "week_3.html#summary",
+    "title": "3  Week 3 - Corrections",
+    "section": "3.1 Summary",
+    "text": "3.1 Summary\nThis week focuses on corrections in remote sensing, often referring to the process which is applied to the raw satellite image. There are three types of corrections that can be used in remote sensing, and each poses a different solution to the type of image distortion encountered.\n\n3.1.1 Geometric correction\nThere are different types of errors that can occur when satellite data is being collected. In the case of this error, image distortions are at the forefront. For this type of correction, there are four potential image distortions that can be encountered: view angle, topography, wind and rotation of the Earth.\nIn order for this process to work, ground control points (GCPs) need to be identified in order to match points to the satellite image. Here the coordinates are modelled to produce geometric transformation coefficients. This is then plotted and we set the value to 0.5 in order to minimise the root-mean-square-deviation (RMSE).\nThere is another solution that can be applied for geometric correction. This involves the following calculation: (observed - predicted ((the residual))^2. Here the results will be summed up and divided by the no. of data points, and additionally, you calculate the square root of that result.\nThe image below illustrates how this process works.\n\n\n\n\n\nImage source: AWF Wiki (2024)\nThis indicates that the image may be re-sampled as a result. The following list provides ways in which re-sampling can be applied:\n\nLinear\nCubic\nCubic Spline\nNearest Neighbour\n\n\n\n3.1.2 Atmospheric correction\nAccording to GIS Geography (2023), atmospheric correction is the process which “removes the scattering and absorption effects from the atmosphere”. There are three types of atmospheric correction that can be applied:\n\nRelative (to something) correction aims to normalise the intensities of bands within a single image and from multiple dates to one. This can be achieved through the following processes:\n\nDark Object Subtraction (DOS) that searches for the darkest value in each band and subtracts it from each pixel.\nPseudo-Invariant Features (PIFs) that “assumes brightness pixels” of a base image and adjusts it according to the regression result.\n\nAbsolute (definitive) correction aims to change the brightness values into “scaled surface reflectance”, which is later compared to the surface reflectance. However, some datasets may require image altitude and atmospheric visibility data in order for this correction to be properly applied.\nEmpirical Line Correction which uses the measurements that derived form the linear regression against the satellite data. This involves the following calculation: Reflectance (fieldspectrum) = gain * radiance(input data) + offset\n\nThe image below shows the difference between satellite images before (left image - which shows “top of atmosphere reflectance”) and after (right image - which shows “surface reflectance”) atmospheric correction is applied. Often, “absorption and scattering creates haze in an image, which reduces the contrast of the image” (Lecture 3, slide 27) and this can be seen across the two images below.\n\n\n\n\n\nImage source: Mapbox (2013)\n\n\n3.1.3 Topographic correction\nThis type of correction is also know as Orthorectification Correction which is a subset of georectification. It is the process where distortions are removed through setting the viewpoint to the nadir, and in addition to that it provides coordinates to the image. This error occurs as “The topographical variations in the surface of the earth and the tilt of the satellite or aerial sensor can affect the distance with which features on the satellite or aerial image are displayed.” (Satellite Imaging Corporation (2022). The image below shows the layers applied when performing this correcton, which inidicates the requirement of an elevation model.\n\n\n\n\n\nImage source: Intermap (2019)\nAdditionally this solution requires the cosine correction model:\n\n\n\n\n\n\nLH is the “corrected radiance observed from the horizontal surface” - from DN to TOA (digital number to top of atmosphere)\nLT is the “radiance before correction observed from the inclined face”\ni is the “solar incidence angle” - the cosine of the angle between the normal line of the slope and the solar zenith\nθo (theta) is the “solar zenith angle”\n\n\n\n3.1.4 Radiometric calibration\nThis is where “sensors capture image brightness as digital number” through recording the “intensity of the electromagnetic radiation” (Humboldt State University 2020) and can be measured in the following ways:\n\nin watts (power or light)\nper square meter (surface within FOV)\nper steradian (angle of view)\nper nanometer (wavelength)\n\nList taken from Lecture 3, slide 48\n\n\n3.1.5 Definitions\nAzimuth angle - “the compass direction from which the sunlight is coming” that informs you which direction to face and can vary from 0˚ to 360˚\nGeorectification - giving coordinates to an image\nNadir - view of directly looking down on an area\nOrthorectification - removing distortions by making the pixels viewpoint at the nadir\nScattering - can create the “adjacency effect”, radiance from pixels nearby mixed into pixel of interest\nSlope - attenuated atmospheric correction which involved the “dimming and blurring from scattering of light”. This is the electromagnetic wave absorption and scattering by the atmosphere.\nSolar azimuth - compass angle of the Sun (N=0˚) 90˚E at sunrise and 270˚W at sunset\nSolar zenith - angle of local zenith (above the point on ground) and Sun from vertical (90˚ elevation)\nSpectral radiance - “the amount of light within a band from a sensor in the field ov view (FOV)”\nView angle - this means that the image angle doesn’t align with the Nadir."
+  },
+  {
+    "objectID": "week_3.html#applications",
+    "href": "week_3.html#applications",
+    "title": "3  Week 3 - Corrections",
+    "section": "3.2 Applications",
+    "text": "3.2 Applications\nIlori et al. (2019) conducted a study where they set out to investigate atmospheric correction techniques particularly for coastal remote sensing cases. They aimed to extract the ocean colour which “provides information on in-water optical properties” (pg 1), however this is difficult to extract as only “~10% of the total signal reaches the TOA” (pg 2)."
+  },
+  {
+    "objectID": "week_3.html#reflection",
+    "href": "week_3.html#reflection",
+    "title": "3  Week 3 - Corrections",
+    "section": "3.3 Reflection",
+    "text": "3.3 Reflection\nThis weeks topic was relatively interesting for me to learn about. I was not aware that there would be such a variety of errors and correction types that can be applied to satellite imagery."
+  },
+  {
+    "objectID": "week_3.html#references",
+    "href": "week_3.html#references",
+    "title": "3  Week 3 - Corrections",
+    "section": "3.4 References",
+    "text": "3.4 References\nAWK Wiki (2024) http://wiki.awf.forst.uni-goettingen.de/wiki/index.php/Geometric_corrections\nCelestis (2024) https://www.celestis.com/resources/faq/what-are-the-azimuth-and-elevation-of-a-satellite/#:~:text=Azimuth%20and%20Elevation%20are%20measures,0°%20to%20360°.\nGIS Geography (2023) https://gisgeography.com/atmospheric-correction/\nHumboldt State University (2020) http://gsp.humboldt.edu/olm/Courses/GSP_216/online/lesson7/radiometric.html\nIlori, C. O. et al. (2019) Analysing Performances of Different Atmospheric Correction Techniques for Landsat 8: Application for Coastal Remote Sensing. Remote Sensing. 11(4), pg 1-20. [Online] Available via: https://www.mdpi.com/2072-4292/11/4/469\nIntermap (2019) https://www.intermap.com/blog/orthorectification-in-a-nutshell\nMa, Z. et al. (2020) Uncertainty Analysis for Topographic Correction for Hyperspectral Remote Sensing Images. Remote Sensing. 12(4), pg 1-24. [Online] Available via: https://www.mdpi.com/2072-4292/12/4/705\nMapbox (2013) https://blog.mapbox.com/before-and-after-atmospheric-correction-97f55cb2b5d1\nSatellite Imaging Corporation (2022) https://www.satimagingcorp.com/services/orthorectification/#:~:text=The%20image%20data%20must%20be,angles%2C%20positions%2C%20and%20areas."
+  },
+  {
+    "objectID": "week_5.html#summary",
+    "href": "week_5.html#summary",
+    "title": "5  Week 5 - Google Earth Engine (GEE)",
+    "section": "5.1 Summary",
+    "text": "5.1 Summary\nThis week we were introduce to Google Earth Engine (GEE) which is a tool used as a geospatial processing service. The programming language for GEE is typically JavaScript, but there a Python API is available too, both of which can be used to create queryable applications.\n\n\n\n\n\nImage source: Google Earth Engine (2024)"
+  },
+  {
+    "objectID": "week_5.html#applications",
+    "href": "week_5.html#applications",
+    "title": "5  Week 5 - Google Earth Engine (GEE)",
+    "section": "5.2 Applications",
+    "text": "5.2 Applications\n\n\n\n\n\nImage source: Screenshot of Google Earth Engine Editor from local drive (2024)\n\n\n\n\n\nImage source: Global Forest Watch (2014)"
+  },
+  {
+    "objectID": "week_5.html#reflection",
+    "href": "week_5.html#reflection",
+    "title": "5  Week 5 - Google Earth Engine (GEE)",
+    "section": "5.3 Reflection",
+    "text": "5.3 Reflection"
+  },
+  {
+    "objectID": "week_5.html#references",
+    "href": "week_5.html#references",
+    "title": "5  Week 5 - Google Earth Engine (GEE)",
+    "section": "5.4 References",
+    "text": "5.4 References\nGoogle Earth Engine (2024) https://developers.google.com/earth-engine/guides/scale\nGlobal Forest Watch (2014) https://maps.googleblog.com/2014/02/monitoring-worlds-forests-with-global.html\nHeydani, H. et al. (2024) Innovative data clustering method improved drought prediction in heterogeneous landscapes using GEE-derived remote sensing indicies. Remote Sensing Applications: Society and Envrionment. 33, pg 1-24. [Online] Available via: https://www.sciencedirect.com/science/article/pii/S2352938523001945?casa_token=c1ICkOzPCiEAAAAA:jSqy7gbls-x_-NSwASr2zRkMRd2B33OtibS4Ck80w3O3WxwdFvBezO5-oPNQ37aoYmCp-2-Z\nWang, L. et al. (2020) A summary of the special issue on remote sensing of land change science with Google Earth Engine. Remote Sensing of Environment. 248, pg 1-9. [Online] Available via: https://www.sciencedirect.com/science/article/pii/S0034425720303722?casa_token=ZGNvttTlCr8AAAAA:QsF6p-ZoKnl742ohzFi_uQARdKgfXimXAYHo3sxsyBH09m4BmJRL615dkjCwGhhb8k_M02SE"
+  },
+  {
+    "objectID": "week_6.html#summary",
+    "href": "week_6.html#summary",
+    "title": "6  Week 6 - Classification 1",
+    "section": "6.1 Summary",
+    "text": "6.1 Summary"
+  },
+  {
+    "objectID": "week_6.html#applications",
+    "href": "week_6.html#applications",
+    "title": "6  Week 6 - Classification 1",
+    "section": "6.2 Applications",
+    "text": "6.2 Applications"
+  },
+  {
+    "objectID": "week_6.html#reflection",
+    "href": "week_6.html#reflection",
+    "title": "6  Week 6 - Classification 1",
+    "section": "6.3 Reflection",
+    "text": "6.3 Reflection"
+  },
+  {
+    "objectID": "week_6.html#references",
+    "href": "week_6.html#references",
+    "title": "6  Week 6 - Classification 1",
+    "section": "6.4 References",
+    "text": "6.4 References"
+  },
+  {
+    "objectID": "week_7.html#summary",
+    "href": "week_7.html#summary",
+    "title": "7  Week 7 - Classification 2",
+    "section": "7.1 Summary",
+    "text": "7.1 Summary"
+  },
+  {
+    "objectID": "week_7.html#applications",
+    "href": "week_7.html#applications",
+    "title": "7  Week 7 - Classification 2",
+    "section": "7.2 Applications",
+    "text": "7.2 Applications"
+  },
+  {
+    "objectID": "week_7.html#reflection",
+    "href": "week_7.html#reflection",
+    "title": "7  Week 7 - Classification 2",
+    "section": "7.3 Reflection",
+    "text": "7.3 Reflection"
+  },
+  {
+    "objectID": "week_7.html#references",
+    "href": "week_7.html#references",
+    "title": "7  Week 7 - Classification 2",
+    "section": "7.4 References",
+    "text": "7.4 References"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "RS - Quarto",
+    "section": "",
+    "text": "Introduction\nHello, I’m Maria! I was born and raised in West London. I graduated in BA Geography with Spatial Data Science Pathway in July 2023 from King’s College London, and moved straight onto my masters course in Urban Spatial Science MSc at UCL (University College London) at the Center for Advance Spatial Analytics. My academic interests have always lied in human geography, especially analysing behaviour patterns, influences and place interactions. This is particularly reflected through my dissertation where I studied how the interaction and exposure from social media platforms influence the ways in which places are explored. During my undergraduate degree, I took three modules in spatial data science, where we focused on learning the Python programming language, and this later encouraged me to continue this pathway and expand my technical skills.\nAside from academic interests, I have always loved to travel and explore places ever since I can remember, which is partially what inspired me to take geography in the first place. Alongside that, my dance trips have enabled me to visit different countries and cultures, enjoy good food, music and warm weather.\n\n\n\n\n\nAlthough it is not my first time coding, Remote Sensing is a relatively new topic for me, as it is not usually taken by human geographers. I am keen to learn about how these skills are applied in spatial analysis, and hopefully I can implement what I have learnt in the future!"
+  }
+]

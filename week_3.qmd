@@ -50,13 +50,37 @@ The image below shows the difference between satellite images before (left image
 
 ### Topographic correction
 
-This type of correction is also know as [**Orthorectification Correction**]{style="color: #2ACAEA"} which is a subset of georectification. It is the process where distortions are removed through setting the viewpoint to the nadir, and in addition to that it provides coordinates to the image. This error occurs as *"The topographical variations in the surface of the earth and the tilt of the satellite or aerial sensor can affect the distance with which features on the satellite or aerial image are displayed."* (Satellite Imaging Corporation (2022). The image below shows the layers applied when performing this correcton, which inidicates the requirement of an elevation model. Additionally this solution requires the cosine correction
+This type of correction is also know as [**Orthorectification Correction**]{style="color: #2ACAEA"} which is a subset of georectification. It is the process where distortions are removed through setting the viewpoint to the nadir, and in addition to that it provides coordinates to the image. This error occurs as *"The topographical variations in the surface of the earth and the tilt of the satellite or aerial sensor can affect the distance with which features on the satellite or aerial image are displayed."* (Satellite Imaging Corporation (2022). The image below shows the layers applied when performing this correcton, which inidicates the requirement of an elevation model.
 
 ![](https://www.intermap.com/hs-fs/hubfs/Ortho4image1.png?width=889&name=Ortho4image1.png){fig-align="center"}
 
 ~Image source: Intermap (2019)~
 
+Additionally this solution requires the cosine correction model:
+
+![](images/DB118D8B-A5DC-440D-9008-9A0BB212E92C_4_5005_c.jpeg){fig-align="left" width="167"}
+
+-   L~H~ is the "corrected radiance observed from the horizontal surface" - from DN to TOA (digital number to top of atmosphere)
+
+-   L~T~ is the "radiance before correction observed from the inclined face"
+
+-   *i* is the "solar incidence angle" - the cosine of the angle between the normal line of the slope and the solar zenith
+
+-   θo (theta) is the "solar zenith angle"
+
 ### Radiometric calibration
+
+This is where "sensors capture image brightness as digital number" through recording the *"intensity of the electromagnetic radiation*" (Humboldt State University 2020) and can be measured in the following ways:
+
+-   in watts (power or light)
+
+-   per square meter (surface within FOV)
+
+-   per steradian (angle of view)
+
+-   per nanometer (wavelength)
+
+~List\ taken\ from\ Lecture\ 3,\ slide\ 48~
 
 ### Definitions
 
@@ -76,13 +100,17 @@ This type of correction is also know as [**Orthorectification Correction**]{styl
 
 [**Solar zenith**]{style="color: #FF9CB6"} - angle of local zenith (above the point on ground) and Sun from vertical (90˚ elevation)
 
+[**Spectral radiance**]{style="color: #FF9CB6"} - "the amount of light within a band from a sensor in the field ov view (FOV)"
+
 [**View angle**]{style="color: #FF9CB6"} - this means that the image angle doesn't align with the Nadir.
 
 ## Applications
 
+Ilori et al. (2019) conducted a study where they set out to investigate atmospheric correction techniques particularly for coastal remote sensing cases. They aimed to extract the ocean colour which *"provides information on in-water optical properties"* (pg 1), however this is difficult to extract as only "\~10% of the total signal reaches the TOA" (pg 2).
+
 ## Reflection
 
-This weeks' topic was relatively interesting for me to learn about. I was not aware that there would be such a variety of errors and correction types that can be applied to satellite imagery.
+This weeks topic was relatively interesting for me to learn about. I was not aware that there would be such a variety of errors and correction types that can be applied to satellite imagery.
 
 ## References
 
@@ -92,7 +120,13 @@ Celestis (2024) <https://www.celestis.com/resources/faq/what-are-the-azimuth-and
 
 GIS Geography (2023) <https://gisgeography.com/atmospheric-correction/>
 
+Humboldt State University (2020) <http://gsp.humboldt.edu/olm/Courses/GSP_216/online/lesson7/radiometric.html>
+
+Ilori, C. O. et al. (2019) Analysing Performances of Different Atmospheric Correction Techniques for Landsat 8: Application for Coastal Remote Sensing. *Remote Sensing.* 11(4), pg 1-20. \[Online\] Available via: <https://www.mdpi.com/2072-4292/11/4/469>
+
 Intermap (2019) <https://www.intermap.com/blog/orthorectification-in-a-nutshell>
+
+Ma, Z. et al. (2020) Uncertainty Analysis for Topographic Correction for Hyperspectral Remote Sensing Images. *Remote Sensing.* 12(4), pg 1-24. \[Online\] Available via: <https://www.mdpi.com/2072-4292/12/4/705>
 
 Mapbox (2013) <https://blog.mapbox.com/before-and-after-atmospheric-correction-97f55cb2b5d1>
 

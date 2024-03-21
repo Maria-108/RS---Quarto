@@ -25,3 +25,7 @@ This week we were introduce to Google Earth Engine (GEE) which is a tool used as
 Google Earth Engine (2024) <https://developers.google.com/earth-engine/guides/scale>
 
 Global Forest Watch (2014) <https://maps.googleblog.com/2014/02/monitoring-worlds-forests-with-global.html>
+
+Heydani, H. et al. (2024) Innovative data clustering method improved drought prediction in heterogeneous landscapes using GEE-derived remote sensing indicies. *Remote Sensing Applications: Society and Envrionment.* 33, pg 1-24. \[Online\] Available via: <https://www.sciencedirect.com/science/article/pii/S2352938523001945?casa_token=c1ICkOzPCiEAAAAA:jSqy7gbls-x_-NSwASr2zRkMRd2B33OtibS4Ck80w3O3WxwdFvBezO5-oPNQ37aoYmCp-2-Z>
+
+Wang, L. et al. (2020) A summary of the special issue on remote sensing of land change science with Google Earth Engine. Remote Sensing of Environment. 248, pg 1-9. \[Online\] Available via: <https://www.sciencedirect.com/science/article/pii/S0034425720303722?casa_token=ZGNvttTlCr8AAAAA:QsF6p-ZoKnl742ohzFi_uQARdKgfXimXAYHo3sxsyBH09m4BmJRL615dkjCwGhhb8k_M02SE>
