@@ -11,14 +11,14 @@
     "href": "week_3.html#applications",
     "title": "3  Week 3 - Corrections",
     "section": "3.2 Applications",
-    "text": "3.2 Applications\nIlori et al. (2019) conducted a study where they set out to investigate atmospheric correction techniques particularly for coastal remote sensing cases. They aimed to extract the ocean colour which “provides information on in-water optical properties” (pg 1), however this is difficult to extract as only “~10% of the total signal reaches the TOA” (pg 2). The main method that was applied to this study was atmospheric correction, but the researchers recognised that “residual errors can introduce large uncertainties in Rrs estimates, resulting in erroneous retrieval of OC products such as apparent optical properties” (pg 2). They found that the application of atmospheric correction was unreliable for “443 and 482 nm channels” but where able to perform well at”only a few sites located in nearshore and inland waters” (pg 12).\nMa et al. (2020) conducted a study to analyse uncertainty for topographic correction. They applied the cosine correction and the digital elevation model (DEM) in their methods and found that the uncertainty of the solar incidence angle was related to the rugged terrain, and its radiance substantially increased after this correction was applied. Despite these methods being different from each other,\n\n\n\n\n\nImage source: Ma et al. (2020)"
+    "text": "3.2 Applications\nIlori et al. (2019) conducted a study where they set out to investigate atmospheric correction techniques particularly for coastal remote sensing cases. They aimed to extract the ocean colour which “provides information on in-water optical properties” (pg 1), however this is difficult to extract as only “~10% of the total signal reaches the TOA” (pg 2). The main method that was applied to this study was atmospheric correction, but the researchers recognised that “residual errors can introduce large uncertainties in Rrs estimates, resulting in erroneous retrieval of OC products such as apparent optical properties” (pg 2). They found that the application of atmospheric correction was unreliable for “443 and 482 nm channels” but where able to perform well at”only a few sites located in nearshore and inland waters” (pg 12).\nMa et al. (2020) conducted a study to analyse uncertainty for topographic correction. They applied the cosine correction and the digital elevation model (DEM) in their methods and found that the uncertainty of the solar incidence angle was related to the rugged terrain, and its radiance substantially increased after this correction was applied. Despite these methods being different from each other, it is clear that there are other errors and uncertainties that can appear even after corrections have been applied to the satellite images.\n\n\n\n\n\nImage source: Ma et al. (2020)"
   },
   {
     "objectID": "week_3.html#reflection",
     "href": "week_3.html#reflection",
     "title": "3  Week 3 - Corrections",
     "section": "3.3 Reflection",
-    "text": "3.3 Reflection\nThis weeks topic was relatively interesting for me to learn about. I was not aware that there would be such a variety of errors and correction types that can be applied to satellite imagery."
+    "text": "3.3 Reflection\nThis weeks topic was relatively interesting for me to learn about. I was not aware that there would be such a variety of errors and correction types that can be applied to satellite imagery. Having insight into correction methods seems important as it ensures that errors are removed to an extent and the quality and accuracy of the image are at the forefront. In this week, joining datasets and enhancements were also covered, both of which are equally important to what was summarised above, but I decided to focus on the correction types as I felt that this is a necessary step that needs to take place prior to analysing imagery for whatever research purpose, otherwise if this isn’t done, it may result in issues regarding the accuracy of data analysed which may further hinder and results derived from the imagery. I have never encountered any of this before, so it was quite overwhelming to grasp at first, as there are several sub-components to each correction method. However, I still consider this significant “preventive” that can aid any researcher when engaging in remote sensing analysis."
   },
   {
     "objectID": "week_3.html#references",
@@ -26,96 +26,5 @@
     "title": "3  Week 3 - Corrections",
     "section": "3.4 References",
     "text": "3.4 References\nAWK Wiki (2024) http://wiki.awf.forst.uni-goettingen.de/wiki/index.php/Geometric_corrections\nCelestis (2024) https://www.celestis.com/resources/faq/what-are-the-azimuth-and-elevation-of-a-satellite/#:~:text=Azimuth%20and%20Elevation%20are%20measures,0°%20to%20360°.\nGIS Geography (2023) https://gisgeography.com/atmospheric-correction/\nHumboldt State University (2020) http://gsp.humboldt.edu/olm/Courses/GSP_216/online/lesson7/radiometric.html\nIlori, C. O. et al. (2019) Analysing Performances of Different Atmospheric Correction Techniques for Landsat 8: Application for Coastal Remote Sensing. Remote Sensing. 11(4), pg 1-20. [Online] Available via: https://www.mdpi.com/2072-4292/11/4/469\nIntermap (2019) https://www.intermap.com/blog/orthorectification-in-a-nutshell\nMa, Z. et al. (2020) Uncertainty Analysis for Topographic Correction for Hyperspectral Remote Sensing Images. Remote Sensing. 12(4), pg 1-24. [Online] Available via: https://www.mdpi.com/2072-4292/12/4/705\nMapbox (2013) https://blog.mapbox.com/before-and-after-atmospheric-correction-97f55cb2b5d1\nSatellite Imaging Corporation (2022) https://www.satimagingcorp.com/services/orthorectification/#:~:text=The%20image%20data%20must%20be,angles%2C%20positions%2C%20and%20areas."
-  },
-  {
-    "objectID": "week_5.html#summary",
-    "href": "week_5.html#summary",
-    "title": "5  Week 5 - Google Earth Engine (GEE)",
-    "section": "5.1 Summary",
-    "text": "5.1 Summary\nThis week we were introduce to Google Earth Engine (GEE) which is a tool used as a geospatial processing service. The programming language for GEE is typically JavaScript, but there a Python API is available too, both of which can be used to create queryable applications.\n\n\n\n\n\nImage source: Google Earth Engine (2024)"
-  },
-  {
-    "objectID": "week_5.html#applications",
-    "href": "week_5.html#applications",
-    "title": "5  Week 5 - Google Earth Engine (GEE)",
-    "section": "5.2 Applications",
-    "text": "5.2 Applications\n\n\n\n\n\nImage source: Screenshot of Google Earth Engine Editor from local drive (2024)\n\n\n\n\n\nImage source: Global Forest Watch (2014)"
-  },
-  {
-    "objectID": "week_5.html#reflection",
-    "href": "week_5.html#reflection",
-    "title": "5  Week 5 - Google Earth Engine (GEE)",
-    "section": "5.3 Reflection",
-    "text": "5.3 Reflection\nI really enjoyed working with GEE."
-  },
-  {
-    "objectID": "week_5.html#references",
-    "href": "week_5.html#references",
-    "title": "5  Week 5 - Google Earth Engine (GEE)",
-    "section": "5.4 References",
-    "text": "5.4 References\nGoogle Earth Engine (2024) https://developers.google.com/earth-engine/guides/scale\nGlobal Forest Watch (2014) https://maps.googleblog.com/2014/02/monitoring-worlds-forests-with-global.html\nHeydani, H. et al. (2024) Innovative data clustering method improved drought prediction in heterogeneous landscapes using GEE-derived remote sensing indicies. Remote Sensing Applications: Society and Envrionment. 33, pg 1-24. [Online] Available via: https://www.sciencedirect.com/science/article/pii/S2352938523001945?casa_token=c1ICkOzPCiEAAAAA:jSqy7gbls-x_-NSwASr2zRkMRd2B33OtibS4Ck80w3O3WxwdFvBezO5-oPNQ37aoYmCp-2-Z\nWang, L. et al. (2020) A summary of the special issue on remote sensing of land change science with Google Earth Engine. Remote Sensing of Environment. 248, pg 1-9. [Online] Available via: https://www.sciencedirect.com/science/article/pii/S0034425720303722?casa_token=ZGNvttTlCr8AAAAA:QsF6p-ZoKnl742ohzFi_uQARdKgfXimXAYHo3sxsyBH09m4BmJRL615dkjCwGhhb8k_M02SE"
-  },
-  {
-    "objectID": "week_6.html#summary",
-    "href": "week_6.html#summary",
-    "title": "6  Week 6 - Classification 1",
-    "section": "6.1 Summary",
-    "text": "6.1 Summary"
-  },
-  {
-    "objectID": "week_6.html#applications",
-    "href": "week_6.html#applications",
-    "title": "6  Week 6 - Classification 1",
-    "section": "6.2 Applications",
-    "text": "6.2 Applications"
-  },
-  {
-    "objectID": "week_6.html#reflection",
-    "href": "week_6.html#reflection",
-    "title": "6  Week 6 - Classification 1",
-    "section": "6.3 Reflection",
-    "text": "6.3 Reflection"
-  },
-  {
-    "objectID": "week_6.html#references",
-    "href": "week_6.html#references",
-    "title": "6  Week 6 - Classification 1",
-    "section": "6.4 References",
-    "text": "6.4 References"
-  },
-  {
-    "objectID": "week_7.html#summary",
-    "href": "week_7.html#summary",
-    "title": "7  Week 7 - Classification 2",
-    "section": "7.1 Summary",
-    "text": "7.1 Summary"
-  },
-  {
-    "objectID": "week_7.html#applications",
-    "href": "week_7.html#applications",
-    "title": "7  Week 7 - Classification 2",
-    "section": "7.2 Applications",
-    "text": "7.2 Applications"
-  },
-  {
-    "objectID": "week_7.html#reflection",
-    "href": "week_7.html#reflection",
-    "title": "7  Week 7 - Classification 2",
-    "section": "7.3 Reflection",
-    "text": "7.3 Reflection"
-  },
-  {
-    "objectID": "week_7.html#references",
-    "href": "week_7.html#references",
-    "title": "7  Week 7 - Classification 2",
-    "section": "7.4 References",
-    "text": "7.4 References"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "RS - Quarto",
-    "section": "",
-    "text": "Introduction\nHello, I’m Maria! I was born and raised in West London. I graduated in BA Geography with Spatial Data Science Pathway in July 2023 from King’s College London, and moved straight onto my masters course in Urban Spatial Science MSc at UCL (University College London) at the Center for Advance Spatial Analytics. My academic interests have always lied in human geography, especially analysing behaviour patterns, influences and place interactions. This is particularly reflected through my dissertation where I studied how the interaction and exposure from social media platforms influence the ways in which places are explored. During my undergraduate degree, I took three modules in spatial data science, where we focused on learning the Python programming language, and this later encouraged me to continue this pathway and expand my technical skills.\nAside from academic interests, I have always loved to travel and explore places ever since I can remember, which is partially what inspired me to take geography in the first place. Alongside that, my dance trips have enabled me to visit different countries and cultures, enjoy good food, music and warm weather.\n\n\n\n\n\nAlthough it is not my first time coding, Remote Sensing is a relatively new topic for me, as it is not usually taken by human geographers. I am keen to learn about how these skills are applied in spatial analysis, and hopefully I can implement what I have learnt in the future!"
   }
 ]

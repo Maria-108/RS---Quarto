@@ -108,7 +108,7 @@ This is where "sensors capture image brightness as digital number" through recor
 
 Ilori et al. (2019) conducted a study where they set out to investigate atmospheric correction techniques particularly for coastal remote sensing cases. They aimed to extract the ocean colour which *"provides information on in-water optical properties"* (pg 1), however this is difficult to extract as only "\~10% of the total signal reaches the TOA" (pg 2). The main method that was applied to this study was atmospheric correction, but the researchers recognised that *"residual errors can introduce large uncertainties in R~rs~ estimates, resulting in erroneous retrieval of OC products such as apparent optical properties"* (pg 2). They found that the application of atmospheric correction was unreliable for "*443 and 482 nm channels"* but where able to perform well at "*only a few sites located in nearshore and inland waters"* (pg 12).
 
-Ma et al. (2020) conducted a study to analyse uncertainty for topographic correction. They applied the cosine correction and the digital elevation model (DEM) in their methods and found that the uncertainty of the solar incidence angle was related to the rugged terrain, and its radiance substantially increased after this correction was applied. Despite these methods being different from each other,
+Ma et al. (2020) conducted a study to analyse uncertainty for topographic correction. They applied the cosine correction and the digital elevation model (DEM) in their methods and found that the uncertainty of the solar incidence angle was related to the rugged terrain, and its radiance substantially increased after this correction was applied. Despite these methods being different from each other, it is clear that there are other errors and uncertainties that can appear even after corrections have been applied to the satellite images.
 
 ![](images/8FA15F78-EE8D-4182-A216-8A6083B8B320_1_201_a.jpeg){fig-align="center" width="458"}
 
@@ -116,7 +116,7 @@ Ma et al. (2020) conducted a study to analyse uncertainty for topographic correc
 
 ## Reflection
 
-This weeks topic was relatively interesting for me to learn about. I was not aware that there would be such a variety of errors and correction types that can be applied to satellite imagery.
+This weeks topic was relatively interesting for me to learn about. I was not aware that there would be such a variety of errors and correction types that can be applied to satellite imagery. Having insight into correction methods seems important as it ensures that errors are removed to an extent and the quality and accuracy of the image are at the forefront. In this week, joining datasets and enhancements were also covered, both of which are equally important to what was summarised above, but I decided to focus on the correction types as I felt that this is a necessary step that needs to take place prior to analysing imagery for whatever research purpose, otherwise if this isn't done, it may result in issues regarding the accuracy of data analysed which may further hinder and results derived from the imagery. I have never encountered any of this before, so it was quite overwhelming to grasp at first, as there are several sub-components to each correction method. However, I still consider this significant "preventive" that can aid any researcher when engaging in remote sensing analysis.
 
 ## References
 
