@@ -20,6 +20,8 @@ This week we were introduce to Google Earth Engine (GEE) which is a tool used as
 
 ## Reflection
 
+I really enjoyed working with GEE.
+
 ## References
 
 Google Earth Engine (2024) <https://developers.google.com/earth-engine/guides/scale>
