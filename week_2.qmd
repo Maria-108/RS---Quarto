@@ -1,5 +1,7 @@
 # Week 2 - Satellite Presentation of CALIPSO via Xaringen
 
+If for some reason the slides won't render properly, please click on this link: <https://maria-108.github.io/RS-Xaringan/#1>
+
 ```{r echo = FALSE, out.width='40%'}
 
 xaringanExtra::embed_xaringan(url = "https://maria-108.github.io/RS-Xaringan/#1",
