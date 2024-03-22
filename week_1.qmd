@@ -104,4 +104,4 @@ Time and Date (2024) <https://www.timeanddate.com/astronomy/red-sunset.html>
 
 Viasat (2024) <https://news.viasat.com/blog/scn/radio-waves-and-how-satellites-use-them>
 
-Zhao, M. et al. (2019) Applications of Satellite Remote Sensing of Nighttime Light Observations: Advances, Challenges and Perspectives. *Remote Sensing.* 11(17), pg 1-35. \[Online\] Available via: <https://www.mdpi.com/2072-4292/11/17/1971>
+Zhao, M. et al. (2019) Applications of Satellite Remote Sensing of Nighttime Light Observations: Advances, Challenges and Perspectives. *2* 11(17), pg 1-35. \[Online\] Available via: <https://www.mdpi.com/2072-4292/11/17/1971>

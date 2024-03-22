@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>RS - Quarto - 1&nbsp; Week 1 - Introduction to Remote Sensing</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./week_2.html" rel="next">
+<link href="./index.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week_1.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Week 1 - Introduction to Remote Sensing</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">RS - Quarto</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_1.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Week 1 - Introduction to Remote Sensing</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Week 2 - Satellite Presentation of CALIPSO via Xaringen</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week 3 - Corrections</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week 4 - Policy</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 5 - Google Earth Engine (GEE)</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 6 - Classification 1</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 7 - Classification 2</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Week 8 - Synthetic Aperture Radar (SAR)</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Appendix</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">1.1</span> Summary</a>
+  <ul class="collapse">
+  <li><a href="#passive-vs.-active-satellites" id="toc-passive-vs.-active-satellites" class="nav-link" data-scroll-target="#passive-vs.-active-satellites"><span class="header-section-number">1.1.1</span> Passive vs.&nbsp;Active Satellites</a></li>
+  <li><a href="#electromagnetic-radiation-emr---waves" id="toc-electromagnetic-radiation-emr---waves" class="nav-link" data-scroll-target="#electromagnetic-radiation-emr---waves"><span class="header-section-number">1.1.2</span> Electromagnetic Radiation (EMR) - Waves</a></li>
+  <li><a href="#atmospheric-scattering" id="toc-atmospheric-scattering" class="nav-link" data-scroll-target="#atmospheric-scattering"><span class="header-section-number">1.1.3</span> Atmospheric Scattering</a></li>
+  <li><a href="#resolutions" id="toc-resolutions" class="nav-link" data-scroll-target="#resolutions"><span class="header-section-number">1.1.4</span> Resolutions</a></li>
+  </ul></li>
+  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">1.2</span> Applications</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">1.3</span> Reflection</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">1.4</span> References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Week 1 - Introduction to Remote Sensing</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="summary" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">1.1</span> Summary</h2>
+<p>The concept of remote sensing is as clear as the name suggests; it is “sensing” ie: observing certain features of the Earth from a distance, often conducted through the aid of satellites. By exact definition it is: <em>“the process of detecting and monitoring the physical characteristics of an area by measuring its reflected and emitted radiation at a distance”</em> (USGS 2024).</p>
+<p>Spatial data scientists, among many other analysts, are taught to use this data which enables them to conduct analysis and gain geographical insight of a particular study area. This can involve topology, weather conditions, density of buildings, how developed an area is, and many more.</p>
+<section id="passive-vs.-active-satellites" class="level3" data-number="1.1.1">
+<h3 data-number="1.1.1" class="anchored" data-anchor-id="passive-vs.-active-satellites"><span class="header-section-number">1.1.1</span> Passive vs.&nbsp;Active Satellites</h3>
+<p><img src="images/533291FA-8B79-432F-A449-73F239D2454D_1_201_a.jpeg" class="img-fluid"></p>
+<p>There are two types of satellites that have been designed for Earth Observation known to Remote Sensing. The diagrams illustrate the differences between the functions of these satellite types. Passive satellite sensors are designed to reflect energy from the Sun, where its’ energy is distributed and sensed as electromagnetic waves.</p>
+<p>Examples of passive sensors include the following:</p>
+<ul>
+<li><p>Landsat 8</p></li>
+<li><p>Sentiel-2</p></li>
+<li><p>Aqua (MODIS)</p></li>
+<li><p>Planetscope (Dove)</p></li>
+<li><p>Worldview-4</p></li>
+<li><p>Pleiades</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/3AE8EFFA-ABFC-4939-A490-3D49D1BBD52A_1_201_a.jpeg" class="img-fluid figure-img" width="617"></p>
+</figure>
+</div>
+<p>Active satellite sensors are designed to emit electromagnetic waves which then waits to receive information. These particular sensors are able to “see through” clouds, volcanic ash and other atmospheric conditions, and are also able to collect data during the night.</p>
+<p>Examples of active sensors include the following:</p>
+<ul>
+<li><p>SAR (Synthetic Apeture Radar)</p></li>
+<li><p>LiDAR (Light Detection and Ranging)</p></li>
+<li><p>Sentiel-1</p></li>
+<li><p>RADARSAT-2</p></li>
+</ul>
+</section>
+<section id="electromagnetic-radiation-emr---waves" class="level3" data-number="1.1.2">
+<h3 data-number="1.1.2" class="anchored" data-anchor-id="electromagnetic-radiation-emr---waves"><span class="header-section-number">1.1.2</span> Electromagnetic Radiation (EMR) - Waves</h3>
+<p>Electromagnetic waves are three-dimensional in terms of the vertical movement of the electric field (blue), the horizontal movement of the magnetic field (pink) across a particular direction (as shown in the diagram below). These wavelengths come in different sizes creating an electromagnetic spectrum which can indicate the type of radiation emitted towards the Earth. Passive satellite sensors tend to operate in the visible, infrared, thermal infrared and microwave sections of the electromagnetic spectrum (NASA 2024), whilst active sensors operate on microwave and radio wavelength sections (ESA 2024).</p>
+<p><img src="images/2F2D0A3F-FD70-4EDE-91B7-2716C0507C32_1_201_a-02.jpeg" class="img-fluid" width="834"></p>
+<p><sub>Image&nbsp;Source:&nbsp;created&nbsp;through&nbsp;Canva</sub></p>
+</section>
+<section id="atmospheric-scattering" class="level3" data-number="1.1.3">
+<h3 data-number="1.1.3" class="anchored" data-anchor-id="atmospheric-scattering"><span class="header-section-number">1.1.3</span> Atmospheric Scattering</h3>
+<p>The energy emitted from the Sun is scattered into the atmosphere as particles. The smaller wavelengths scatter across the Earth’s atmosphere, whilst longer wavelengths are absorbed and reflected back.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/0CC0CB81-CC06-4F5B-B6AD-E3548022CBDC.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</section>
+<section id="resolutions" class="level3" data-number="1.1.4">
+<h3 data-number="1.1.4" class="anchored" data-anchor-id="resolutions"><span class="header-section-number">1.1.4</span> Resolutions</h3>
+<p>There are four types of resolutions that need to be considered in remote sensing. One of the more obvious ones relate to <span style="color: #FE9600"><strong>spatial</strong></span> resolution which determines the size of each pixel in an image. In this way, you are selecting the geographic scale of the satellite image where lower range of meters implies a high-resolution image, as it is recorded from the closest capturing point (zoom level) to Earth observation, whilst the higher kilometer range indicated a lower-resolution image.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.earthdata.nasa.gov/s3fs-public/styles/large_full_968px_/public/2023-04/Spatial-Resolution-Basics.jpeg?VersionId=a5wlR6AMhdFPzRmNTWGApkF4taCVPrV0&amp;itok=XpghkRyC" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>The other three definitions have been provided by NASA Earthdata (2024)</p>
+<p><span style="color: #FE9600"><strong>Spectral</strong></span> - “the ability of a sensor to discern finer wavelengths”. This implies the resolution should have more or narrower bands.</p>
+<p><span style="color: #FE9600"><strong>Temporal</strong></span> - “the time it take for a satellite to complete an orbit and revisit the same observation data”.</p>
+<p><span style="color: #FE9600"><strong>Radiometric</strong></span> - “the amount of information in each pixel…the no. of bits representing the energy recorded”.</p>
+</section>
+</section>
+<section id="applications" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">1.2</span> Applications</h2>
+<p><img src="images/613715A8-C184-45C5-A577-464AA227A7AC.webp" class="img-fluid"></p>
+<p><sub>Image&nbsp;source:&nbsp;Viasat&nbsp;(2024)</sub></p>
+<p>The image above illustrates how different types of devices and technologies can operate on different wavelength frequencies, and thus correspond to a certain Hertz range. Satellites are able to capture different wavelengths, and this is determined on which bands are used for analysis.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://viasat.brightspotgocdn.com/dims4/default/05ec8b5/2147483647/strip/true/crop/1188x669+100+0/resize/2000x1126!/format/webp/quality/90/?url=https%3A%2F%2Fbrightspot-go-k1-viasat.s3.us-east-1.amazonaws.com%2Fbrightspot%2F0d%2Fc3%2F0e8fda5ecb823f9f0cb9f5ac2cc1%2Fradio-waves-em-spectrum.jpg" class="img-fluid figure-img" width="658"></p>
+</figure>
+</div>
+<p><sub>Image&nbsp;source:&nbsp;Viasat&nbsp;(2024)</sub></p>
+<p>According to Patino &amp; Duque (2013), the applications of remote sensing have advanced to benefit urban planning, as it can be implemented in research that involves the following: population density estimation, house-value modelling, informal settlement detection, land surface temperature, vegetation cover, soil quality detection etc, all of which can cause additional social impacts due to its relation to the urban environment. Much of this data obtained can be integrated into both local and national policies, which contribute to the urban development of a given area.</p>
+<p>Zhao et al.&nbsp;(2019) reviewed nighttime light observation, which is enabled through observing active satellite sensors. Their study looked at the DMSP-OLS satellite (Defence Meteorological Satellite Programme - Operational Linescan System) where the photomultiplier tube (PMT) is used for detecting cities, fires, fishing boats and moonlit clouds. According to the NCEI (National Centre for Environmental Information), this type of satellite uses <em>“visible and infrared sensors that collect images globally across a 3000km swath, twice a day”</em>. This data also provides both solar and lunar information, which enables nighttime observations to be recorded according to the time period of intended detection. Despite the obvious benefit of this satellite being able to account for nighttime records, one of the drawback on this data is the <em>“percent frequency of cloud-free light detections with no brightness information”</em>. Zhao et al.&nbsp;(2019) have argued that this factor complicates the research of human activities during nighttime detection.</p>
+</section>
+<section id="reflection" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">1.3</span> Reflection</h2>
+<p>There were a lot of interesting concepts introduced this week. I particularly enjoyed learning about the different types of sensors that operate on satellites, and the difference in types of resolution available to view and how this can alter the perspective of the area observed. I wasn’t aware of the amount of components that are require for remote sensing, despite the assumption of the complexity of satellites. I was particularly interested in discovering the applications of active sensors, as they can detect during the night and through clouds, which opens up a lot of research opportunities. I was interested in learning the different types of resolutions that are taken into account when processing satellite images.</p>
+<p>Based on the concepts introduced above, this made me realise that remote sensing can be a useful tool in spatial analysis as there are many features that can be used and adjusted such as the resolution type and scale that alter the way in which certain areas and geographical characteristics can be analysed. I don’t know yet whether I will be implementing remote sensing in my work in the future, but if in any case I do, I’m sure it would add an insightful perspective to my analysis which is equally visually stimulating.</p>
+</section>
+<section id="references" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="references"><span class="header-section-number">1.4</span> References</h2>
+<p>ESA (2024) <a href="https://www.esa.int/Education/7._Active_sensors#:~:text=The%20most%20common%20active%20sensor,regions%20of%20the%20electromagnetic%20spectrum." class="uri">https://www.esa.int/Education/7._Active_sensors#:~:text=The%20most%20common%20active%20sensor,regions%20of%20the%20electromagnetic%20spectrum.</a></p>
+<p>NASA (2024) <a href="https://www.earthdata.nasa.gov/learn/backgrounders/passive-sensors#:~:text=Most%20passive%20systems%20used%20in,portions%20of%20the%20electromagnetic%20spectrum." class="uri">https://www.earthdata.nasa.gov/learn/backgrounders/passive-sensors#:~:text=Most%20passive%20systems%20used%20in,portions%20of%20the%20electromagnetic%20spectrum.</a></p>
+<p>NASA Earthdata (2024) <a href="https://www.earthdata.nasa.gov/learn/backgrounders/remote-sensing#:~:text=Resolution%20plays%20a%20role%20in,spatial%2C%20spectral%2C%20and%20temporal." class="uri">https://www.earthdata.nasa.gov/learn/backgrounders/remote-sensing#:~:text=Resolution%20plays%20a%20role%20in,spatial%2C%20spectral%2C%20and%20temporal.</a></p>
+<p>Patino, J.E. &amp; Duque, J. C. (2013) A review if regional science applications of satellite remote sensing in urban setting. <em>Computers, Environment and Urban Systems</em>. 37, pg 1-17. [Available Online] Accessed via: <a href="https://www.sciencedirect.com/science/article/pii/S0198971512000567" class="uri">https://www.sciencedirect.com/science/article/pii/S0198971512000567</a></p>
+<p>Time and Date (2024) <a href="https://www.timeanddate.com/astronomy/red-sunset.html" class="uri">https://www.timeanddate.com/astronomy/red-sunset.html</a></p>
+<p>Viasat (2024) <a href="https://news.viasat.com/blog/scn/radio-waves-and-how-satellites-use-them" class="uri">https://news.viasat.com/blog/scn/radio-waves-and-how-satellites-use-them</a></p>
+<p>Zhao, M. et al.&nbsp;(2019) Applications of Satellite Remote Sensing of Nighttime Light Observations: Advances, Challenges and Perspectives. <em>2</em> 11(17), pg 1-35. [Online] Available via: <a href="https://www.mdpi.com/2072-4292/11/17/1971" class="uri">https://www.mdpi.com/2072-4292/11/17/1971</a></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./index.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Introduction</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./week_2.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Week 2 - Satellite Presentation of CALIPSO via Xaringen</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>
