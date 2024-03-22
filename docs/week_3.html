@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>RS - Quarto - 3&nbsp; Week 3 - Corrections</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./week_4.html" rel="next">
+<link href="./week_2.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./week_3.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week 3 - Corrections</span></a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">RS - Quarto</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Week 1 - Introduction to Remote Sensing</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Week 2 - Satellite Presentation of CALIPSO via Xaringen</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_3.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week 3 - Corrections</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week 4 - Policy</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Week 5 - Google Earth Engine (GEE)</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_6.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Week 6 - Classification 1</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Week 7 - Classification 2</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./week_8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Week 8 - Synthetic Aperture Radar (SAR)</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Appendix</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">3.1</span> Summary</a>
+  <ul class="collapse">
+  <li><a href="#geometric-correction" id="toc-geometric-correction" class="nav-link" data-scroll-target="#geometric-correction"><span class="header-section-number">3.1.1</span> Geometric correction</a></li>
+  <li><a href="#atmospheric-correction" id="toc-atmospheric-correction" class="nav-link" data-scroll-target="#atmospheric-correction"><span class="header-section-number">3.1.2</span> Atmospheric correction</a></li>
+  <li><a href="#topographic-correction" id="toc-topographic-correction" class="nav-link" data-scroll-target="#topographic-correction"><span class="header-section-number">3.1.3</span> Topographic correction</a></li>
+  <li><a href="#radiometric-calibration" id="toc-radiometric-calibration" class="nav-link" data-scroll-target="#radiometric-calibration"><span class="header-section-number">3.1.4</span> Radiometric calibration</a></li>
+  <li><a href="#definitions" id="toc-definitions" class="nav-link" data-scroll-target="#definitions"><span class="header-section-number">3.1.5</span> Definitions</a></li>
+  </ul></li>
+  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">3.2</span> Applications</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">3.3</span> Reflection</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">3.4</span> References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Week 3 - Corrections</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="summary" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">3.1</span> Summary</h2>
+<p>This week focuses on corrections in remote sensing, often referring to the process which is applied to the raw satellite image. There are three types of corrections that can be used in remote sensing, and each poses a different solution to the type of image distortion encountered.</p>
+<section id="geometric-correction" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="geometric-correction"><span class="header-section-number">3.1.1</span> Geometric correction</h3>
+<p>There are different types of errors that can occur when satellite data is being collected. In the case of this error, image distortions are at the forefront. For this type of correction, there are four potential image distortions that can be encountered: view angle, topography, wind and rotation of the Earth.</p>
+<p>In order for this process to work, ground control points (GCPs) need to be identified in order to match points to the satellite image. Here the coordinates are modelled to produce geometric transformation coefficients. This is then plotted and we set the value to 0.5 in order to minimise the root-mean-square-deviation (RMSE).</p>
+<p>There is another solution that can be applied for geometric correction. This involves the following calculation: <strong>(observed - predicted ((the residual))^2</strong>. Here the results will be summed up and divided by the no. of data points, and additionally, you calculate the square root of that result.</p>
+<p>The image below illustrates how this process works.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="http://wiki.awf.forst.uni-goettingen.de/wiki/images/thumb/b/b7/Geometric_correction.png/600px-Geometric_correction.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p><sub>Image&nbsp;source:&nbsp;AWF&nbsp;Wiki&nbsp;(2024)</sub></p>
+<p>This indicates that the image may be re-sampled as a result. The following list provides ways in which re-sampling can be applied:</p>
+<ul>
+<li><p>Linear</p></li>
+<li><p>Cubic</p></li>
+<li><p>Cubic Spline</p></li>
+<li><p>Nearest Neighbour</p></li>
+</ul>
+</section>
+<section id="atmospheric-correction" class="level3" data-number="3.1.2">
+<h3 data-number="3.1.2" class="anchored" data-anchor-id="atmospheric-correction"><span class="header-section-number">3.1.2</span> Atmospheric correction</h3>
+<p>According to GIS Geography (2023), atmospheric correction is the process which <em>“removes the scattering and absorption effects from the atmosphere”.</em> There are three types of atmospheric correction that can be applied:</p>
+<ul>
+<li><p><span style="color: #60BEDB"><strong>Relative</strong></span> (to something) correction aims to normalise the intensities of bands within a single image and from multiple dates to one. This can be achieved through the following processes:</p>
+<ul>
+<li><p><span style="color: #BBA8FF"><strong>Dark Object Subtraction (DOS)</strong></span> that searches for the darkest value in each band and subtracts it from each pixel.</p></li>
+<li><p><span style="color: #BBA8FF"><strong>Pseudo-Invariant Features (PIFs)</strong></span> that “assumes brightness pixels” of a base image and adjusts it according to the regression result.</p></li>
+</ul></li>
+<li><p><span style="color: #60BEDB"><strong>Absolute</strong></span> (definitive) correction aims to change the brightness values into “scaled surface reflectance”, which is later compared to the surface reflectance. However, some datasets may require image altitude and atmospheric visibility data in order for this correction to be properly applied.</p></li>
+<li><p><span style="color: #60BEDB"><strong>Empirical Line Correction</strong></span> which uses the measurements that derived form the linear regression against the satellite data. This involves the following calculation: <strong>Reflectance (fieldspectrum) = gain * radiance(input data) + offset</strong></p></li>
+</ul>
+<p>The image below shows the difference between satellite images before (left image - which shows <em>“top of atmosphere reflectance”</em>) and after (right image - which shows <em>“surface reflectance”</em>) atmospheric correction is applied. Often, <em>“absorption and scattering creates haze in an image, which reduces the contrast of the image”</em> (Lecture 3, slide 27) and this can be seen across the two images below.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://miro.medium.com/v2/resize:fit:928/0*2ifBrZXebW_EaQca.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p><sub>Image&nbsp;source:&nbsp;Mapbox&nbsp;(2013)</sub></p>
+</section>
+<section id="topographic-correction" class="level3" data-number="3.1.3">
+<h3 data-number="3.1.3" class="anchored" data-anchor-id="topographic-correction"><span class="header-section-number">3.1.3</span> Topographic correction</h3>
+<p>This type of correction is also know as <span style="color: #2ACAEA"><strong>Orthorectification Correction</strong></span> which is a subset of georectification. It is the process where distortions are removed through setting the viewpoint to the nadir, and in addition to that it provides coordinates to the image. This error occurs as <em>“The topographical variations in the surface of the earth and the tilt of the satellite or aerial sensor can affect the distance with which features on the satellite or aerial image are displayed.”</em> (Satellite Imaging Corporation (2022). The image below shows the layers applied when performing this correcton, which inidicates the requirement of an elevation model.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.intermap.com/hs-fs/hubfs/Ortho4image1.png?width=889&amp;name=Ortho4image1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p><sub>Image&nbsp;source:&nbsp;Intermap&nbsp;(2019)</sub></p>
+<p>Additionally this solution requires the cosine correction model:</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="images/DB118D8B-A5DC-440D-9008-9A0BB212E92C_4_5005_c.jpeg" class="img-fluid figure-img" width="167"></p>
+</figure>
+</div>
+<ul>
+<li><p>L<sub>H</sub> is the “corrected radiance observed from the horizontal surface” - from DN to TOA (digital number to top of atmosphere)</p></li>
+<li><p>L<sub>T</sub> is the “radiance before correction observed from the inclined face”</p></li>
+<li><p><em>i</em> is the “solar incidence angle” - the cosine of the angle between the normal line of the slope and the solar zenith</p></li>
+<li><p>θo (theta) is the “solar zenith angle”</p></li>
+</ul>
+</section>
+<section id="radiometric-calibration" class="level3" data-number="3.1.4">
+<h3 data-number="3.1.4" class="anchored" data-anchor-id="radiometric-calibration"><span class="header-section-number">3.1.4</span> Radiometric calibration</h3>
+<p>This is where “sensors capture image brightness as digital number” through recording the <em>“intensity of the electromagnetic radiation</em>” (Humboldt State University 2020) and can be measured in the following ways:</p>
+<ul>
+<li><p>in watts (power or light)</p></li>
+<li><p>per square meter (surface within FOV)</p></li>
+<li><p>per steradian (angle of view)</p></li>
+<li><p>per nanometer (wavelength)</p></li>
+</ul>
+<p><sub>List&nbsp;taken&nbsp;from&nbsp;Lecture&nbsp;3,&nbsp;slide&nbsp;48</sub></p>
+</section>
+<section id="definitions" class="level3" data-number="3.1.5">
+<h3 data-number="3.1.5" class="anchored" data-anchor-id="definitions"><span class="header-section-number">3.1.5</span> Definitions</h3>
+<p><span style="color: #FF9CB6"><strong>Azimuth angle</strong></span> - “the compass direction from which the sunlight is coming” that informs you which direction to face and can vary from 0˚ to 360˚</p>
+<p><span style="color: #FF9CB6"><strong>Georectification</strong></span> - giving coordinates to an image</p>
+<p><span style="color: #FF9CB6"><strong>Nadir</strong></span> - view of directly looking down on an area</p>
+<p><span style="color: #FF9CB6"><strong>Orthorectification</strong></span> - removing distortions by making the pixels viewpoint at the nadir</p>
+<p><span style="color: #FF9CB6"><strong>Scattering</strong></span> - can create the “adjacency effect”, radiance from pixels nearby mixed into pixel of interest</p>
+<p><span style="color: #FF9CB6"><strong>Slope</strong></span> - attenuated atmospheric correction which involved the “dimming and blurring from scattering of light”. This is the electromagnetic wave absorption and scattering by the atmosphere.</p>
+<p><span style="color: #FF9CB6"><strong>Solar azimuth</strong></span> - compass angle of the Sun (N=0˚) 90˚E at sunrise and 270˚W at sunset</p>
+<p><span style="color: #FF9CB6"><strong>Solar zenith</strong></span> - angle of local zenith (above the point on ground) and Sun from vertical (90˚ elevation)</p>
+<p><span style="color: #FF9CB6"><strong>Spectral radiance</strong></span> - “the amount of light within a band from a sensor in the field ov view (FOV)”</p>
+<p><span style="color: #FF9CB6"><strong>View angle</strong></span> - this means that the image angle doesn’t align with the Nadir.</p>
+</section>
+</section>
+<section id="applications" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">3.2</span> Applications</h2>
+<p>Ilori et al.&nbsp;(2019) conducted a study where they set out to investigate atmospheric correction techniques particularly for coastal remote sensing cases. They aimed to extract the ocean colour which <em>“provides information on in-water optical properties”</em> (pg 1), however this is difficult to extract as only “~10% of the total signal reaches the TOA” (pg 2). The main method that was applied to this study was atmospheric correction, but the researchers recognised that <em>“residual errors can introduce large uncertainties in R<sub>rs</sub> estimates, resulting in erroneous retrieval of OC products such as apparent optical properties”</em> (pg 2). They found that the application of atmospheric correction was unreliable for “<em>443 and 482 nm channels”</em> but where able to perform well at”<em>only a few sites located in nearshore and inland waters”</em> (pg 12).</p>
+<p>Ma et al.&nbsp;(2020) conducted a study to analyse uncertainty for topographic correction. They applied the cosine correction and the digital elevation model (DEM) in their methods and found that the uncertainty of the solar incidence angle was related to the rugged terrain, and its radiance substantially increased after this correction was applied. Despite these methods being different from each other, it is clear that there are other errors and uncertainties that can appear even after corrections have been applied to the satellite images.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/8FA15F78-EE8D-4182-A216-8A6083B8B320_1_201_a.jpeg" class="img-fluid figure-img" width="458"></p>
+</figure>
+</div>
+<p><sub>Image&nbsp;source:&nbsp;Ma&nbsp;et&nbsp;al.&nbsp;(2020)</sub></p>
+</section>
+<section id="reflection" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">3.3</span> Reflection</h2>
+<p>This weeks topic was relatively interesting for me to learn about. I was not aware that there would be such a variety of errors and correction types that can be applied to satellite imagery. Having insight into correction methods seems important as it ensures that errors are removed to an extent and the quality and accuracy of the image are at the forefront. In this week, joining datasets and enhancements were also covered, both of which are equally important to what was summarised above, but I decided to focus on the correction types as I felt that this is a necessary step that needs to take place prior to analysing imagery for whatever research purpose, otherwise if this isn’t done, it may result in issues regarding the accuracy of data analysed which may further hinder and results derived from the imagery. I have never encountered any of this before, so it was quite overwhelming to grasp at first, as there are several sub-components to each correction method. However, I still consider this significant “preventive” that can aid any researcher when engaging in remote sensing analysis.</p>
+</section>
+<section id="references" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="references"><span class="header-section-number">3.4</span> References</h2>
+<p>AWK Wiki (2024) <a href="http://wiki.awf.forst.uni-goettingen.de/wiki/index.php/Geometric_corrections" class="uri">http://wiki.awf.forst.uni-goettingen.de/wiki/index.php/Geometric_corrections</a></p>
+<p>Celestis (2024) <a href="https://www.celestis.com/resources/faq/what-are-the-azimuth-and-elevation-of-a-satellite/#:~:text=Azimuth%20and%20Elevation%20are%20measures,0°%20to%20360°." class="uri">https://www.celestis.com/resources/faq/what-are-the-azimuth-and-elevation-of-a-satellite/#:~:text=Azimuth%20and%20Elevation%20are%20measures,0°%20to%20360°.</a></p>
+<p>GIS Geography (2023) <a href="https://gisgeography.com/atmospheric-correction/" class="uri">https://gisgeography.com/atmospheric-correction/</a></p>
+<p>Humboldt State University (2020) <a href="http://gsp.humboldt.edu/olm/Courses/GSP_216/online/lesson7/radiometric.html" class="uri">http://gsp.humboldt.edu/olm/Courses/GSP_216/online/lesson7/radiometric.html</a></p>
+<p>Ilori, C. O. et al.&nbsp;(2019) Analysing Performances of Different Atmospheric Correction Techniques for Landsat 8: Application for Coastal Remote Sensing. <em>Remote Sensing.</em> 11(4), pg 1-20. [Online] Available via: <a href="https://www.mdpi.com/2072-4292/11/4/469" class="uri">https://www.mdpi.com/2072-4292/11/4/469</a></p>
+<p>Intermap (2019) <a href="https://www.intermap.com/blog/orthorectification-in-a-nutshell" class="uri">https://www.intermap.com/blog/orthorectification-in-a-nutshell</a></p>
+<p>Ma, Z. et al.&nbsp;(2020) Uncertainty Analysis for Topographic Correction for Hyperspectral Remote Sensing Images. <em>Remote Sensing.</em> 12(4), pg 1-24. [Online] Available via: <a href="https://www.mdpi.com/2072-4292/12/4/705" class="uri">https://www.mdpi.com/2072-4292/12/4/705</a></p>
+<p>Mapbox (2013) <a href="https://blog.mapbox.com/before-and-after-atmospheric-correction-97f55cb2b5d1" class="uri">https://blog.mapbox.com/before-and-after-atmospheric-correction-97f55cb2b5d1</a></p>
+<p>Satellite Imaging Corporation (2022) <a href="https://www.satimagingcorp.com/services/orthorectification/#:~:text=The%20image%20data%20must%20be,angles%2C%20positions%2C%20and%20areas." class="uri">https://www.satimagingcorp.com/services/orthorectification/#:~:text=The%20image%20data%20must%20be,angles%2C%20positions%2C%20and%20areas</a>.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./week_2.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Week 2 - Satellite Presentation of CALIPSO via Xaringen</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./week_4.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Week 4 - Policy</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+</body></html>
