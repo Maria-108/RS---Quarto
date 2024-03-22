@@ -169,7 +169,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">5.1</span> Summary</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">5.1</span> Summary</a>
+  <ul class="collapse">
+  <li><a href="#user-interface-backend" id="toc-user-interface-backend" class="nav-link" data-scroll-target="#user-interface-backend"><span class="header-section-number">5.1.1</span> User Interface &amp; Backend</a></li>
+  <li><a href="#scale" id="toc-scale" class="nav-link" data-scroll-target="#scale"><span class="header-section-number">5.1.2</span> Scale</a></li>
+  </ul></li>
   <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">5.2</span> Applications</a></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">5.3</span> Reflection</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">5.4</span> References</a></li>
@@ -198,12 +202,28 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="summary" class="level2" data-number="5.1">
 <h2 data-number="5.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">5.1</span> Summary</h2>
-<p>This week we were introduce to Google Earth Engine (GEE) which is a tool used as a geospatial processing service. The programming language for GEE is typically JavaScript, but there a Python API is available too, both of which can be used to create queryable applications.</p>
+<p>This week we were introduced to Google Earth Engine (GEE) which is a tool used as a geospatial processing service. The programming language for GEE is typically JavaScript, but there a Python API is available too, both of which can be used to create queryable applications.</p>
 <p>Important Terms</p>
 <ul>
-<li><p>ImageCollection = image stack</p></li>
-<li><p>FeatureCollection = feature stack (lots of polygons)</p></li>
+<li><p><span style="color: #BE29EC"><strong>Image</strong></span> = a raster that has bands</p></li>
+<li><p><span style="color: #BE29EC"><strong>Feature</strong></span> = a vectors which has attributes and geometry</p></li>
+<li><p><span style="color: #BE29EC"><strong>ImageCollection</strong></span> = image stack</p></li>
+<li><p><span style="color: #BE29EC"><strong>FeatureCollection</strong></span> = feature stack (lots of polygons)</p></li>
 </ul>
+<section id="user-interface-backend" class="level3" data-number="5.1.1">
+<h3 data-number="5.1.1" class="anchored" data-anchor-id="user-interface-backend"><span class="header-section-number">5.1.1</span> User Interface &amp; Backend</h3>
+<p>GEE has a two sides to its operation. The backend (aka the “Server side”) and the frontend (aka “User Interface”). The backend of GEE is where complex computations are processed as the server carries out tasks through using the <span style="color: #BE29EC"><strong>var</strong></span> and <span style="color: #BE29EC"><strong>ee.</strong></span> functions, and data collected from the chosen satellites are stored. However it is important to note that the server won’t show anything on the user interface unless <span style="color: #BE29EC"><strong>Map.addLayer</strong></span> is used to call the variable into a layer. The frontend is the visual display of what code is being run and added to the map layers. Here legends, graphs and other feature can be added to showcase different aspects of what is being analysed. Polygons can be drawn or selected through entering coordinates and zoom levels can automatically be applied.</p>
+<p>The image below is a screenshot of how GEE looks like in editor mode, as it displays the backend at the top of the screen, alongside a console to its right that indicates what processes have run, and the user interface below to display the layers that have been selected and called.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/41C27C4A-3979-4307-827D-18ECDE4FC555_1_201_a.jpeg" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p><sub>Image&nbsp;source:&nbsp;Screenshot&nbsp;of&nbsp;Google&nbsp;Earth&nbsp;Engine&nbsp;Editor&nbsp;from&nbsp;local&nbsp;drive&nbsp;(2024)</sub></p>
+</section>
+<section id="scale" class="level3" data-number="5.1.2">
+<h3 data-number="5.1.2" class="anchored" data-anchor-id="scale"><span class="header-section-number">5.1.2</span> Scale</h3>
+<p>It is important to mention that GEE uses a top-down approach when rendering scale (aka resolution) of satellite imagery. As indicated in the image below, it layers each pixel of the chosen location, which is then reduced by region, or by neighbourhood where a specific parameter of the window would need to be indicated (aka specifying a kernel).</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://developers.google.com/static/earth-engine/images/Pyramids.png" class="img-fluid figure-img"></p>
@@ -211,24 +231,28 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p><sub>Image&nbsp;source:&nbsp;Google&nbsp;Earth&nbsp;Engine&nbsp;(2024)</sub></p>
 </section>
+</section>
 <section id="applications" class="level2" data-number="5.2">
 <h2 data-number="5.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">5.2</span> Applications</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/41C27C4A-3979-4307-827D-18ECDE4FC555_1_201_a.jpeg" class="img-fluid figure-img"></p>
-</figure>
-</div>
-<p><sub>Image&nbsp;source:&nbsp;Screenshot&nbsp;of&nbsp;Google&nbsp;Earth&nbsp;Engine&nbsp;Editor&nbsp;from&nbsp;local&nbsp;drive&nbsp;(2024)</sub></p>
+<p>There are many ways in which Google Earth Engine has been applied. According to its catalog, it has multiple datasets such as landcover, climate &amp; weather, terrain, night-time imagery and more, which are available to researchers. The image below is an example of the Global Forest Watch which used GEE to “detect changes in forest cover”. Their dashboard has been extended to offer insight on landcover, climate and fires globally.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhi4z8TfSTUmzFegdCj-7qPCa271D_vjk4Mpby2UBAhTjvUORNNweHyWCoz07YR4DZUzsVVvM6yh2LrXyBIIQl7WAQTLpmbCcbaWTZnwOivTHAzBlQSBidsBtwgppAVgQVUiDe_pyDMTKut/s1600/US+Forest+Region.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 <p><sub>Image&nbsp;source:&nbsp;Global&nbsp;Forest&nbsp;Watch&nbsp;(2014)</sub></p>
+<p>Additionally Wang et al.&nbsp;(2020) have noticed that there is a difference in GEE use between environmental and social remote sensing. Remote sensing of society can be used to analyse areas to perceive its development or for particular policies that are yet to be implemented, although agriculture is relatively significant too, whereas environmental analysis is more concerned with climate and physical land use.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/58F29F08-B5EC-46C9-A4A0-8562581392D6_1_201_a.jpeg" class="img-fluid figure-img" width="434"></p>
+</figure>
+</div>
+<p><sub>Image&nbsp;source:&nbsp;Wang&nbsp;et&nbsp;al.&nbsp;(2020)</sub></p>
+<p>Heydari et al.&nbsp;(2024) conducted a study where they used GEE for drought predictions in Iran where they used several indicies. They extracted NDVI, along with temperature index values and had to validate their results, as part of processing data for predictions. Spectral and temporal filters were extracted in addition to spatial ones, and they found that pre-processed data was accessible. However, they did acknowledge certain limitation of GEE regarding processing and modelling, which were not extensively outlined, but were nevertheless able to perform necessary steps of their research.</p>
 </section>
 <section id="reflection" class="level2" data-number="5.3">
 <h2 data-number="5.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">5.3</span> Reflection</h2>
-<p>I really enjoyed working with GEE.</p>
+<p>I really enjoyed working with GEE. I have never encountered anything like it. I particularly like how both the user interface and backend is simultaneously available to see, which makes it easier to organise the code and understand the visual outputs. The use of Google Earth Engine has plumeted in recent years, and its interesting to see the extend to which it can be applied to for analysis. I am keen to continue using GEE as I am sure it will become relevant at some point in the future. Although it is easier to map out the physical features in GEE, and somewhat harder to gain visualisations of social features, it does not discourage me from using it, as data can be imported from census and can be combined to produce certain output in the user interface. It is very beneficial to both researchers and academics to have an abundance of data to chose from and analyse, which I find particularly exciting as there are many datasets that can be combined for several purposes, both when analysing physical and human features of the world.</p>
 </section>
 <section id="references" class="level2" data-number="5.4">
 <h2 data-number="5.4" class="anchored" data-anchor-id="references"><span class="header-section-number">5.4</span> References</h2>
