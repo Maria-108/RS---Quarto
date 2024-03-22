@@ -123,21 +123,21 @@
     "href": "week_8.html#applications",
     "title": "8  Week 8 - Synthetic Aperture Radar (SAR)",
     "section": "8.2 Applications",
-    "text": "8.2 Applications\nSAR detection can be applied in both physical and urban detection within remote sensing. One of the examples from"
+    "text": "8.2 Applications\nSAR detection can be applied in both physical and urban detection within remote sensing. One of the examples from Zhang et al. (2021) where they used Sentinel-1 polarmetric SAR images to detect flooded urban areas across two locations. Additionally, they pre-processed this data to “extract the backscattering coefficients and interferometric coherences” (pg7). Additionally they trained samples for both flooded and unflooded areas and compared the two results.\n\n\n\n\n\nImage source: Zhang et al. (2021)\nGens (2013) used SAR to detect oceaongraphic changes along the sea floor and he observed rain cells over the ocean. This application is quite different from what we have encountered in the lecture, as it focuses on water body analysis as opposed to land cover types and surfaces. He found that “Apart from wind gust effects on the sea surface, the radar backscatter strongly depends on the frequency and polarization of the radar signal.” (pg 294). His study acknowledged an issue regarding the temporal coverage of SAR when used for oceanogrpahic applications, as the “the difference in wavelength has to be factored in when data from different sources need to be combined in a synergistic analysis” (pg 296). Across both studies, SAR was able to detect changes in areas over time and location, and is able to identify surface types based on the wavelengths. It is clear that SAR is better for urban and physical land changes as opposed to ocean-based detection as there are less issues that are encountered and imagery provides more accurate results."
   },
   {
     "objectID": "week_8.html#reflection",
     "href": "week_8.html#reflection",
     "title": "8  Week 8 - Synthetic Aperture Radar (SAR)",
     "section": "8.3 Reflection",
-    "text": "8.3 Reflection\nI really enjoyed this weeks lecture."
+    "text": "8.3 Reflection\nI really enjoyed this weeks lecture, as we were able to go into more depth than we were originally introduced in the first week. I found that SAR can be broadly applied to various urban and rural areas that can analyse multiple features based on the polarisation and backscattering data that is collected. I find the concept of InSAR particularly interesting and would like to explore that in more detail in my spare time, as it seems like it would serve as a good temporal comparison. I particularly enjoyed learning about the different backscattering that the SAR sensor is able to pick up on, which has proven to be a useful tool in academic research. I would like to use SAR in my future line of work alongside GEE, as I believe it will aid in conducting visual and spatial analysis that is on trend with ongoing research."
   },
   {
     "objectID": "week_8.html#references",
     "href": "week_8.html#references",
     "title": "8  Week 8 - Synthetic Aperture Radar (SAR)",
     "section": "8.4 References",
-    "text": "8.4 References\nNASA Earthdata (2024) https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar\nNASA NISAR (2024) https://nisar.jpl.nasa.gov/mission/get-to-know-sar/interferometry/"
+    "text": "8.4 References\nGens (2013) Oceanographic. applications of SAR remote sensing. GIScience & Remote Sensing. 45(3), pg 275-305. [Online] Available via: https://www.tandfonline.com/doi/abs/10.2747/1548-1603.45.3.275\nNASA Earthdata (2024) https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar\nNASA NISAR (2024) https://nisar.jpl.nasa.gov/mission/get-to-know-sar/interferometry/\nZhang, H. et al. (2021) An Urban Flooding Index for unsupervised inundated urban area detection using Sentinel-1 polarmetric SAR images."
   },
   {
     "objectID": "week_1.html#summary",
