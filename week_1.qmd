@@ -44,7 +44,7 @@ Examples of active sensors include the following:
 
 Electromagnetic waves are three-dimensional in terms of the vertical movement of the electric field (blue), the horizontal movement of the magnetic field (pink) across a particular direction (as shown in the diagram below). These wavelengths come in different sizes creating an electromagnetic spectrum which can indicate the type of radiation emitted towards the Earth. Passive satellite sensors tend to operate in the visible, infrared, thermal infrared and microwave sections of the electromagnetic spectrum (NASA 2024), whilst active sensors operate on microwave and radio wavelength sections (ESA 2024).
 
-![](images/2F2D0A3F-FD70-4EDE-91B7-2716C0507C32_1_201_a-02.jpeg){width="834"}
+![](images/2F2D0A3F-FD70-4EDE-91B7-2716C0507C32_1_201_a-02.jpeg){fig-align="center" width="514"}
 
 ~Image Source: created through Canva~
 
@@ -52,7 +52,7 @@ Electromagnetic waves are three-dimensional in terms of the vertical movement of
 
 The energy emitted from the Sun is scattered into the atmosphere as particles. The smaller wavelengths scatter across the Earth's atmosphere, whilst longer wavelengths are absorbed and reflected back.
 
-![](images/0CC0CB81-CC06-4F5B-B6AD-E3548022CBDC.png){fig-align="center"}
+![](images/0CC0CB81-CC06-4F5B-B6AD-E3548022CBDC.png){fig-align="center" width="503"}
 
 ### Resolutions
 

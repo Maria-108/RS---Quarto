@@ -42,7 +42,7 @@ There are many ways in which Google Earth Engine has been applied. According to 
 
 Additionally Wang et al. (2020) have noticed that there is a difference in GEE use between environmental and social remote sensing. Remote sensing of society can be used to analyse areas to perceive its development or for particular policies that are yet to be implemented, although agriculture is relatively significant too, whereas environmental analysis is more concerned with climate and physical land use.
 
-![](images/58F29F08-B5EC-46C9-A4A0-8562581392D6_1_201_a.jpeg){fig-align="center" width="434"}
+![](images/58F29F08-B5EC-46C9-A4A0-8562581392D6_1_201_a.jpeg){fig-align="center" width="467"}
 
 ~Image source: Wang et al. (2020)~
 

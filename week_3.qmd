@@ -110,7 +110,7 @@ Ilori et al. (2019) conducted a study where they set out to investigate atmosphe
 
 Ma et al. (2020) conducted a study to analyse uncertainty for topographic correction. They applied the cosine correction and the digital elevation model (DEM) in their methods and found that the uncertainty of the solar incidence angle was related to the rugged terrain, and its radiance substantially increased after this correction was applied. Despite these methods being different from each other, it is clear that there are other errors and uncertainties that can appear even after corrections have been applied to the satellite images.
 
-![](images/8FA15F78-EE8D-4182-A216-8A6083B8B320_1_201_a.jpeg){fig-align="center" width="458"}
+![](images/8FA15F78-EE8D-4182-A216-8A6083B8B320_1_201_a.jpeg){fig-align="center" width="489"}
 
 ~Image source: Ma et al. (2020)~
 
