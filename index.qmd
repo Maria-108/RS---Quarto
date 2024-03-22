@@ -1,4 +1,4 @@
-# Introduction {.unnumbered}
+## Introduction {.unnumbered}
 
 Hello, I'm Maria! I was born and raised in West London. I graduated in BA Geography with Spatial Data Science Pathway in July 2023 from King's College London, and moved straight onto my masters course in Urban Spatial Science MSc at UCL (University College London) at the Center for Advance Spatial Analytics. My academic interests have always lied in human geography, especially analysing behaviour patterns, influences and place interactions. This is particularly reflected through my dissertation where I studied how the interaction and exposure from social media platforms influence the ways in which places are explored. During my undergraduate degree, I took three modules in spatial data science, where we focused on learning the Python programming language, and this later encouraged me to continue this pathway and expand my technical skills.
 
