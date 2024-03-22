@@ -16,7 +16,7 @@ Classification trees allow you to classify data into two or more categories, whi
 
 There are two ways in which overfitting can be prevented:
 
-1.  limit the no. of trees that are grown, this would require the minimum no. of pixels within a leaf to be set to 20
+1.  limit the no. of trees that are grown, this would require the minimum no. of pixels within a leaf to be set to 20.
 
 2.  Weakest leaf pruning - where a leaf is removed as the SSR increases
 

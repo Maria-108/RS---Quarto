@@ -26,7 +26,7 @@ The image below is a screenshot of how GEE looks like in editor mode, as it disp
 
 ### Scale
 
-It is important to mention that GEE uses a top-down approach when rendering scale (aka resolution) of satellite imagery. As indicated in the image below, it layers each pixel of the chosen location, which is then reduced by region, or by neighbourhood where a specific parameter of the window would need to be indicated (aka specifying a kernel).
+It is important to mention that GEE uses a top-down approach when rendering scale (aka resolution) of satellite imagery. As indicated in the image below, it layers each pixel of the chosen location, which is then reduced by region, or by neighbourhood where a specific parameter of the window would need to be indicated (aka specifying the kernel).
 
 ![](https://developers.google.com/static/earth-engine/images/Pyramids.png){fig-align="center"}
 

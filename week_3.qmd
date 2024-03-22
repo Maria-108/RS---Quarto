@@ -136,4 +136,4 @@ Ma, Z. et al. (2020) Uncertainty Analysis for Topographic Correction for Hypersp
 
 Mapbox (2013) <https://blog.mapbox.com/before-and-after-atmospheric-correction-97f55cb2b5d1>
 
-Satellite Imaging Corporation (2022) <https://www.satimagingcorp.com/services/orthorectification/#:~:text=The%20image%20data%20must%20be,angles%2C%20positions%2C%20and%20areas.>
+Satellite Imaging Corporation (2022) [https://www.satimagingcorp.com/services/orthorectification/#:\~:text=The%20image%20data%20must%20be,angles%2C%20positions%2C%20and%20areas](https://www.satimagingcorp.com/services/orthorectification/#:~:text=The%20image%20data%20must%20be,angles%2C%20positions%2C%20and%20areas.){.uri}.
