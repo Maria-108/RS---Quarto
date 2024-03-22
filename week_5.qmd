@@ -2,31 +2,55 @@
 
 ## Summary
 
-This week we were introduce to Google Earth Engine (GEE) which is a tool used as a geospatial processing service. The programming language for GEE is typically JavaScript, but there a Python API is available too, both of which can be used to create queryable applications.
+This week we were introduced to Google Earth Engine (GEE) which is a tool used as a geospatial processing service. The programming language for GEE is typically JavaScript, but there a Python API is available too, both of which can be used to create queryable applications.
 
 Important Terms
 
--   ImageCollection = image stack
+-   [**Image**]{style="color: #BE29EC"} = a raster that has bands
 
--   FeatureCollection = feature stack (lots of polygons)
+-   [**Feature**]{style="color: #BE29EC"} = a vectors which has attributes and geometry
 
-![](https://developers.google.com/static/earth-engine/images/Pyramids.png){fig-align="center"}
+-   [**ImageCollection**]{style="color: #BE29EC"} = image stack
 
-~Image source: Google\ Earth\ Engine (2024)~
+-   [**FeatureCollection**]{style="color: #BE29EC"} = feature stack (lots of polygons)
 
-## Applications
+### User Interface & Backend
+
+GEE has a two sides to its operation. The backend (aka the "Server side") and the frontend (aka "User Interface"). The backend of GEE is where complex computations are processed as the server carries out tasks through using the [**var**]{style="color: #BE29EC"} and [**ee.**]{style="color: #BE29EC"} functions, and data collected from the chosen satellites are stored. However it is important to note that the server won't show anything on the user interface unless [**Map.addLayer**]{style="color: #BE29EC"} is used to call the variable into a layer. The frontend is the visual display of what code is being run and added to the map layers. Here legends, graphs and other feature can be added to showcase different aspects of what is being analysed. Polygons can be drawn or selected through entering coordinates and zoom levels can automatically be applied.
+
+The image below is a screenshot of how GEE looks like in editor mode, as it displays the backend at the top of the screen, alongside a console to its right that indicates what processes have run, and the user interface below to display the layers that have been selected and called.
 
 ![](images/41C27C4A-3979-4307-827D-18ECDE4FC555_1_201_a.jpeg){fig-align="center"}
 
-~Image source: Screenshot\ of\ Google\ Earth\ Engine\ Editor\ from\ local\ drive (2024)~
+~Image source: Screenshot of Google Earth Engine Editor from local drive (2024)~
+
+### Scale
+
+It is important to mention that GEE uses a top-down approach when rendering scale (aka resolution) of satellite imagery. As indicated in the image below, it layers each pixel of the chosen location, which is then reduced by region, or by neighbourhood where a specific parameter of the window would need to be indicated (aka specifying a kernel).
+
+![](https://developers.google.com/static/earth-engine/images/Pyramids.png){fig-align="center"}
+
+~Image source: Google Earth Engine (2024)~
+
+## Applications
+
+There are many ways in which Google Earth Engine has been applied. According to its catalog, it has multiple datasets such as landcover, climate & weather, terrain, night-time imagery and more, which are available to researchers. The image below is an example of the Global Forest Watch which used GEE to "detect changes in forest cover". Their dashboard has been extended to offer insight on landcover, climate and fires globally.
 
 ![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhi4z8TfSTUmzFegdCj-7qPCa271D_vjk4Mpby2UBAhTjvUORNNweHyWCoz07YR4DZUzsVVvM6yh2LrXyBIIQl7WAQTLpmbCcbaWTZnwOivTHAzBlQSBidsBtwgppAVgQVUiDe_pyDMTKut/s1600/US+Forest+Region.png){fig-align="center"}
 
-~Image source: Global\ Forest\ Watch (2014)~
+~Image source: Global Forest Watch (2014)~
+
+Additionally Wang et al. (2020) have noticed that there is a difference in GEE use between environmental and social remote sensing. Remote sensing of society can be used to analyse areas to perceive its development or for particular policies that are yet to be implemented, although agriculture is relatively significant too, whereas environmental analysis is more concerned with climate and physical land use.
+
+![](images/58F29F08-B5EC-46C9-A4A0-8562581392D6_1_201_a.jpeg){fig-align="center" width="434"}
+
+~Image source: Wang et al. (2020)~
+
+Heydari et al. (2024) conducted a study where they used GEE for drought predictions in Iran where they used several indicies. They extracted NDVI, along with temperature index values and had to validate their results, as part of processing data for predictions. Spectral and temporal filters were extracted in addition to spatial ones, and they found that pre-processed data was accessible. However, they did acknowledge certain limitation of GEE regarding processing and modelling, which were not extensively outlined, but were nevertheless able to perform necessary steps of their research.
 
 ## Reflection
 
-I really enjoyed working with GEE.
+I really enjoyed working with GEE. I have never encountered anything like it. I particularly like how both the user interface and backend is simultaneously available to see, which makes it easier to organise the code and understand the visual outputs. The use of Google Earth Engine has plumeted in recent years, and its interesting to see the extend to which it can be applied to for analysis. I am keen to continue using GEE as I am sure it will become relevant at some point in the future. Although it is easier to map out the physical features in GEE, and somewhat harder to gain visualisations of social features, it does not discourage me from using it, as data can be imported from census and can be combined to produce certain output in the user interface. It is very beneficial to both researchers and academics to have an abundance of data to chose from and analyse, which I find particularly exciting as there are many datasets that can be combined for several purposes, both when analysing physical and human features of the world.
 
 ## References
 

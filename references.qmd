@@ -1,6 +1,6 @@
 # Appendix {.unnumbered}
 
-This section is designed to provide definitions of all terms, abbreviations and necessary equations encountered from each week in this Remote Sensing Module (CASA0023). All of the sections have been intentionally arranged in alphabetical order for easy navigation.
+This section is designed to provide definitions of all terms and abbreviations encountered from each week in this Remote Sensing Module (CASA0023). All of the sections have been intentionally arranged in alphabetical order for easy navigation.
 
 ## Abbreviations
 
@@ -30,16 +30,42 @@ This section is designed to provide definitions of all terms, abbreviations and 
 
 [**Azimuth angle**]{style="color: #FF9CB6"} - "the compass direction from which the sunlight is coming" that informs you which direction to face and can vary from 0˚ to 360˚
 
+[**Bias**]{style="color: #FF9CB6"} - "the difference between predicted value and true value"
+
 [**Georectification**]{style="color: #FF9CB6"} - giving coordinates to an image
+
+[**Feature**]{style="color: #FF9CB6"} = a vectors which has attributes and geometry
+
+[**FeatureCollection**]{style="color: #FF9CB6"} = feature stack (lots of polygons)
+
+[**Image**]{style="color: #FF9CB6"} = a raster that has bands
+
+[**ImageCollection**]{style="color: #FF9CB6"} = image stack
 
 [**Nadir**]{style="color: #FF9CB6"} - view of directly looking down on an area
 
 [**Orthorectification**]{style="color: #FF9CB6"} - removing distortions by making the pixels viewpoint at the nadir
 
+[**Radiometric resolution**]{style="color: #FF9CB6"} - "the amount of information in each pixel...the no. of bits representing the energy recorded".
+
 [**Scattering**]{style="color: #FF9CB6"} - can create the "adjacency effect", radiance from pixels nearby mixed into pixel of interest
+
+[**Slope**]{style="color: #FF9CB6"} - attenuated atmospheric correction which involved the "dimming and blurring from scattering of light". This is the electromagnetic wave absorption and scattering by the atmosphere.
 
 [**Solar azimuth**]{style="color: #FF9CB6"} - compass angle of the Sun (N=0˚) 90˚E at sunrise and 270˚W at sunset
 
 [**Solar zenith**]{style="color: #FF9CB6"} - angle of local zenith (above the point on ground) and Sun from vertical (90˚ elevation)
 
-## Equations
+[**Spatial resolution**]{style="color: #FF9CB6"} resolution which determines the size of each pixel in an image.
+
+[**Spectral radiance**]{style="color: #FF9CB6"} - "the amount of light within a band from a sensor in the field ov view (FOV)"
+
+[**Spectral resolution**]{style="color: #FF9CB6"} - "the ability of a sensor to discern finer wavelengths". This implies the resolution should have more or narrower bands.
+
+[**Synthetic aperture**]{style="color: #FF9CB6"} - "synthesize a long antenna by combining signals or echo's received by the radar as it moves along a flight track".
+
+[**Temporal resolution**]{style="color: #FF9CB6"} - "the time it take for a satellite to complete an orbit and revisit the same observation data".
+
+[**Variance**]{style="color: #FF9CB6"} - "the variability of a model for a given point"
+
+[**View angle**]{style="color: #FF9CB6"} - this means that the image angle doesn't align with the Nadir.

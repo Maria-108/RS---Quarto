@@ -2,8 +2,48 @@
 
 ## Summary
 
+Although synthetic aperture radar (SAR) was initially introduced in week 1, this week we went into more detail on how SAR operates and how it can be applied in remote sensing. SAR is known to be an active sensor that can observe the Earth through cloudy conditions and can detect during the night, both of which provide textured data, that can offer perspectives that other passive sensors cannot obtain.
+
+SAR is able to emit electromagnetic signals and record how that signal bounces back into the atmosphere. The satellite contains a long RADAR antenna that moves along the azimuth and sweeps the footprint of the Earth's surface. The longer the antenna, the better the resolution of the images. One of the benefits of SAR is that it is able to record and compile images multiple times (aka "sweeping and moving").
+
+![](https://www.earthdata.nasa.gov/s3fs-public/styles/medium_half_480px_/public/imported/SARticle_first-fig_redone-06.jpg?VersionId=Oc59ejSEg0DdN.udlvhzAUKHVi79B5PJ&itok=eJGVoIOW){fig-align="center"}
+
+~Image source: NASA\ Earthdata. (2024)~
+
+### Polarisation & Amplitude (backscattering)
+
+In remote sensing, polarisation is the "direction of travel of electromagnetic waves that are transmitted". There are two orientation types: vertical (up and down) and horizontal (left to right). As indicated in the image below, polarisation is not responded to in the same manner across different surface types as the scattering is often determined by the wavelength. When water bodies are present, it
+
+-   Rough scattering is most sensitive to VV, as it depends on the topology or surface or the Earth.
+
+-   Volume scattering bounce across surfaces (such as leaves in trees) and can be received as both VH and HV .
+
+-   Double bounce scattering is mostly prominent in buildings, but sometime in trees too, which makes these objects sensitive to HH.
+
+![](https://www.earthdata.nasa.gov/s3fs-public/imported/SARPolarization.jpg?VersionId=mSa4j.XwWY8P_9Y0fxw9Ycp0FjGxLDaY){fig-align="center"}
+
+~Image source: NASA\ Earthdata. (2024)~
+
+SAR signals have both backscatter (amplitude) and phase data. The phase data refers to the "location of the wave in a cycle when it returns to the sensor". Here VV refers to the surface roughness, while VH refers to the volume of the surface.
+
+### InSAR
+
+InSAR or Interferometric Sythetic Aperture Radar is a technique that "combines two or more SAR images" within the same region that can indicate either "surface motion or surface topography". Applying this sort of method can be very useful in detection of physical changes over time such as earthquake detection, and the interferogram would output the extent of movement that occurs between the two images in a given location.
+
+![](https://nisar.jpl.nasa.gov/internal_resources/344){fig-align="center"}
+
+~Image source: NASA\ NISAR. (2024)~
+
 ## Applications
+
+SAR detection can be applied in both physical and urban detection within remote sensing. One of the examples from
 
 ## Reflection
 
+I really enjoyed this weeks lecture.
+
 ## References
+
+NASA Earthdata (2024) <https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar>
+
+NASA NISAR (2024) <https://nisar.jpl.nasa.gov/mission/get-to-know-sar/interferometry/>
